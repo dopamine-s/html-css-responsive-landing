@@ -1,0 +1,28 @@
+.page-header__top-bar--opened {
+  position: relative;
+}
+
+.page-header__top-bar--nojs .page-header__toggle {
+  display: none;
+}
+
+.page-header__top-bar--opened .main-nav__list--header {
+  @media (max-width: $desktop-width) {
+    position: absolute;
+  }
+}
+
+.page-header__top-bar--closed .page-header__main-nav {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo--mobile {
+  margin-left: 68px;
+}
+
+
+.page-header__toggle {
+  cursor: pointer;
+}
