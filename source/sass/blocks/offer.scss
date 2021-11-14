@@ -1,0 +1,33 @@
+.offer__slider-header {
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $salad-600;
+}
+
+.offer__nav-bar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.offer__nav-item {
+  border: 1px solid $salad-200;
+}
+
+.offer__nav-item--active {
+  border: none;
+  background-color: $salad-200;
+}
+
+.offer__nav-item--active .offer__nav-link{
+  color: $salad-800;
+}
+
+.offer__nav-link {
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 24px;
+ color: $salad-200;
+}
