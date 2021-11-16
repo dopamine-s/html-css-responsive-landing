@@ -32,22 +32,22 @@
   border: none;
 }
 
-.offer__nav-item--active.offer__nav-item--salad .offer__nav-link  {
+.offer__nav-item--active.offer__nav-item--salad .offer__nav-link {
   color: $salad-800;
   background-color: $salad-200;
 }
 
-.offer__nav-item--active.offer__nav-item--italian .offer__nav-link  {
+.offer__nav-item--active.offer__nav-item--italian .offer__nav-link {
   color: $green-800;
   background-color: $green-200;
 }
 
-.offer__nav-item--active.offer__nav-item--meat .offer__nav-link  {
+.offer__nav-item--active.offer__nav-item--meat .offer__nav-link {
   color: $red-900;
   background-color: $red-300;
 }
 
-.offer__nav-item--active.offer__nav-item--eastern .offer__nav-link  {
+.offer__nav-item--active.offer__nav-item--eastern .offer__nav-link {
   color: $brown-700;
   background-color: $brown-300;
 }
@@ -61,25 +61,26 @@
   display: inline-block;
 }
 
-.offer__slider--salad .offer__nav-link  {
+.offer__slider--salad .offer__nav-link {
   color: $salad-200;
   border-color: $salad-200;
 }
 
-.offer__slider--italian .offer__nav-link  {
+.offer__slider--italian .offer__nav-link {
   color: $green-200;
   border-color: $green-200;
 }
 
-.offer__slider--meat .offer__nav-link  {
+.offer__slider--meat .offer__nav-link {
   color: $red-300;
   border-color: $red-300;
 }
 
-.offer__slider--eastern .offer__nav-link  {
+.offer__slider--eastern .offer__nav-link {
   color: $brown-400;
   border-color: $brown-400;
 }
+
 .offer__slider-list {
   list-style: none;
   margin: 0;
