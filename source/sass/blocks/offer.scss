@@ -3,7 +3,23 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+}
+
+.offer__slider--salad .offer__slider-header {
   color: $salad-600;
+}
+
+.offer__slider--italian .offer__slider-header {
+  color: $green-500;
+}
+
+.offer__slider--meat .offer__slider-header {
+  color: $red-500;
+}
+
+.offer__slider--eastern .offer__slider-header {
+  color: $brown-500;
 }
 
 .offer__nav-bar {
@@ -12,22 +28,140 @@
   padding: 0;
 }
 
-.offer__nav-item {
-  border: 1px solid $salad-200;
+.offer__nav-item--active .offer__nav-link {
+  border: none;
 }
 
-.offer__nav-item--active {
-  border: none;
+.offer__nav-item--active.offer__nav-item--salad .offer__nav-link  {
+  color: $salad-800;
   background-color: $salad-200;
 }
 
-.offer__nav-item--active .offer__nav-link{
-  color: $salad-800;
+.offer__nav-item--active.offer__nav-item--italian .offer__nav-link  {
+  color: $green-800;
+  background-color: $green-200;
+}
+
+.offer__nav-item--active.offer__nav-item--meat .offer__nav-link  {
+  color: $red-900;
+  background-color: $red-300;
+}
+
+.offer__nav-item--active.offer__nav-item--eastern .offer__nav-link  {
+  color: $brown-700;
+  background-color: $brown-300;
 }
 
 .offer__nav-link {
+ padding: 8px 25px;
  font-weight: 400;
  font-size: 18px;
  line-height: 24px;
- color: $salad-200;
+ border: 1px solid;
+ display: inline-block;
+}
+
+.offer__slider--salad .offer__nav-link  {
+  color: $salad-200;
+  border-color: $salad-200;
+}
+
+.offer__slider--italian .offer__nav-link  {
+  color: $green-200;
+  border-color: $green-200;
+}
+
+.offer__slider--meat .offer__nav-link  {
+  color: $red-300;
+  border-color: $red-300;
+}
+
+.offer__slider--eastern .offer__nav-link  {
+  color: $brown-400;
+  border-color: $brown-400;
+}
+.offer__slider-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.offer__slider-item-header {
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.offer__slider--salad .offer__slider-item-header {
+  color: $salad-600;
+}
+
+.offer__slider--italian .offer__slider-item-header {
+  color: $green-500;
+}
+
+.offer__slider--meat .offer__slider-item-header {
+  color: $red-500;
+}
+
+.offer__slider--eastern .offer__slider-item-header {
+  color: $brown-500;
+}
+
+.offer__slider-text {
+  font-weight: 300;
+}
+
+.offer__slider-quantity-button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid $gray-300-transparent-5;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  background-color: $white;
+}
+
+.offer__slider-output {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.offer__slider--salad .offer__slider-output {
+  color: $salad-600;
+}
+
+.offer__slider--italian .offer__slider-output {
+  color: $green-500;
+}
+
+.offer__slider--meat .offer__slider-output {
+  color: $red-500;
+}
+
+.offer__slider--eastern .offer__slider-output {
+  color: $brown-500;
+}
+
+.offer__slider--salad .offer__slider-link-button {
+  color: $salad-600;
+}
+
+.offer__slider--italian .offer__slider-link-button {
+  color: $green-500;
+}
+
+.offer__slider--meat .offer__slider-link-button {
+  color: $red-500;
+}
+
+.offer__slider--eastern .offer__slider-link-button {
+  color: $brown-500;
+}
+
+.offer__slider-control {
+  display: none;
 }
