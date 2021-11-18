@@ -1,0 +1,116 @@
+.products__slider-header {
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.products__slider-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.products__slider-item-header {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  margin: 0;
+}
+
+.products__slider-item-header--salad {
+  color: $salad-600;
+}
+
+.products__slider-item-header--italian {
+  color: $green-500;
+}
+
+.products__slider-item-header--meat {
+  color: $red-500;
+}
+
+.products__slider-item-header--eastern {
+  color: $brown-500;
+}
+
+.products__slider-content {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0;
+}
+
+.products__slider-composition {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0;
+}
+
+.products__slider-composition span {
+  font-weight: 400;
+}
+
+.products__slider-quantity-buttons {
+  margin: 0;
+}
+
+.products__slider-quantity-button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid $gray-300-transparent-5;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  background-color: $white;
+}
+
+.products__slider-output {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.products__slider-price-number {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.products__slider-price-number span {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.products__slider-output--salad,
+.products__slider-price-number--salad {
+  color: $salad-600;
+}
+
+.products__slider-output--italian,
+.products__slider-price-number--italian {
+  color: $green-500;
+}
+
+.products__slider-output--meat,
+.products__slider-price-number--meat {
+  color: $red-500;
+}
+
+ .products__slider-output--eastern,
+ .products__slider-price-number--eastern {
+  color: $brown-500;
+}
+
+.products__slider-volume-number {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 32px;
+  margin: 0;
+}
+

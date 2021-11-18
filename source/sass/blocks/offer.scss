@@ -6,19 +6,19 @@
   margin: 0;
 }
 
-.offer__slider--salad .offer__slider-header {
+.offer__slider-header--salad {
   color: $salad-600;
 }
 
-.offer__slider--italian .offer__slider-header {
+.offer__slider-header--italian {
   color: $green-500;
 }
 
-.offer__slider--meat .offer__slider-header {
+.offer__slider-header--red {
   color: $red-500;
 }
 
-.offer__slider--eastern .offer__slider-header {
+.offer__slider-header--eastern {
   color: $brown-500;
 }
 
@@ -28,57 +28,61 @@
   padding: 0;
 }
 
-.offer__nav-item--active .offer__nav-link {
-  border: none;
-}
-
-.offer__nav-item--active.offer__nav-item--salad .offer__nav-link {
-  color: $salad-800;
-  background-color: $salad-200;
-}
-
-.offer__nav-item--active.offer__nav-item--italian .offer__nav-link {
-  color: $green-800;
-  background-color: $green-200;
-}
-
-.offer__nav-item--active.offer__nav-item--meat .offer__nav-link {
-  color: $red-900;
-  background-color: $red-300;
-}
-
-.offer__nav-item--active.offer__nav-item--eastern .offer__nav-link {
-  color: $brown-700;
-  background-color: $brown-300;
+.offer__nav-item {
+  width: 143px;
 }
 
 .offer__nav-link {
-  padding: 8px 25px;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   border: 1px solid;
-  display: inline-block;
+  display: block;
+  padding: 8px 16px;
 }
 
-.offer__slider--salad .offer__nav-link {
+.offer__nav-bar--salad .offer__nav-link {
   color: $salad-200;
   border-color: $salad-200;
 }
 
-.offer__slider--italian .offer__nav-link {
+.offer__nav-bar--italian .offer__nav-link {
   color: $green-200;
   border-color: $green-200;
 }
 
-.offer__slider--meat .offer__nav-link {
+.offer__nav-bar--meat .offer__nav-link {
   color: $red-300;
   border-color: $red-300;
 }
 
-.offer__slider--eastern .offer__nav-link {
+.offer__nav-bar--eastern .offer__nav-link {
   color: $brown-400;
   border-color: $brown-400;
+}
+
+.offer__nav-link--active {
+  border: none;
+}
+
+.offer__nav-link--active.offer__nav-link--salad {
+  color: $salad-800;
+  background-color: $salad-200;
+}
+
+.offer__nav-link--active.offer__nav-link--italian {
+  color: $green-800;
+  background-color: $green-200;
+}
+
+.offer__nav-link--active.offer__nav-link--meat {
+  color: $red-900;
+  background-color: $red-300;
+}
+
+.offer__nav-link--active.offer__nav-link--eastern {
+  color: $brown-700;
+  background-color: $brown-300;
 }
 
 .offer__slider-list {
@@ -87,31 +91,29 @@
   padding: 0;
 }
 
+.offer__slider-item {
+  display: none;
+}
+
+.offer__slider-item--active {
+  display: block;
+}
+
 .offer__slider-item-header {
   font-family: "Amatic SC", cursive;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-}
-
-.offer__slider--salad .offer__slider-item-header {
-  color: $salad-600;
-}
-
-.offer__slider--italian .offer__slider-item-header {
-  color: $green-500;
-}
-
-.offer__slider--meat .offer__slider-item-header {
-  color: $red-500;
-}
-
-.offer__slider--eastern .offer__slider-item-header {
-  color: $brown-500;
+  margin: 0;
 }
 
 .offer__slider-text {
   font-weight: 300;
+  margin: 0;
+}
+
+.offer__slider-quantity-buttons {
+  margin: 0;
 }
 
 .offer__slider-quantity-button {
@@ -126,40 +128,24 @@
 }
 
 .offer__slider-output {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 24px;
   line-height: 32px;
 }
 
-.offer__slider--salad .offer__slider-output {
+.offer__slider-output--salad {
   color: $salad-600;
 }
 
-.offer__slider--italian .offer__slider-output {
+.offer__slider-output--italian {
   color: $green-500;
 }
 
-.offer__slider--meat .offer__slider-output {
+.offer__slider-output--meat {
   color: $red-500;
 }
 
-.offer__slider--eastern .offer__slider-output {
-  color: $brown-500;
-}
-
-.offer__slider--salad .offer__slider-link-button {
-  color: $salad-600;
-}
-
-.offer__slider--italian .offer__slider-link-button {
-  color: $green-500;
-}
-
-.offer__slider--meat .offer__slider-link-button {
-  color: $red-500;
-}
-
-.offer__slider--eastern .offer__slider-link-button {
+ .offer__slider-output--eastern {
   color: $brown-500;
 }
 

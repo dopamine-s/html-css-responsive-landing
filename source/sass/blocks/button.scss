@@ -5,9 +5,33 @@
   border-radius: 50px;
   text-transform: uppercase;
   display: inline-block;
+  text-align: center;
 }
 
 .button--offer {
   font-size: 18px;
-  padding: 8px 86px 8px 87px;
+  padding: 7px 20px 7px 20px;
+  width: 280px;
+}
+
+.button--products {
+  font-size: 14px;
+  padding: 0 20px;
+  width: 248px;
+}
+
+.button--salad {
+  color: $salad-500;
+}
+
+.button--italian {
+  color: $green-500;
+}
+
+.button--meat {
+  color: $red-500;
+}
+
+.button--eastern {
+  color: $brown-500;
 }
