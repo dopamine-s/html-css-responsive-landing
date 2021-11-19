@@ -1,0 +1,28 @@
+.contacts__wrapper {
+  background-image: url("../img/photo-list/contacts-background-img.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+.contacts__header {
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__link {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: $gray-500;
+}
