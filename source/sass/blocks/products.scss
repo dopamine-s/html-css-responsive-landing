@@ -18,22 +18,22 @@
   font-size: 22px;
   line-height: 27px;
   margin: 0;
-}
 
-.products__slider-item-header--salad {
-  color: $salad-600;
-}
+  &--salad {
+    color: $salad-600;
+  }
 
-.products__slider-item-header--italian {
-  color: $green-500;
-}
+  &--italian {
+    color: $green-500;
+  }
 
-.products__slider-item-header--meat {
-  color: $red-500;
-}
+  &--meat {
+    color: $red-500;
+  }
 
-.products__slider-item-header--eastern {
-  color: $brown-500;
+  &--eastern {
+    color: $brown-500;
+  }
 }
 
 .products__slider-content {

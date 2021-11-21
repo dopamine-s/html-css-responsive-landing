@@ -1,9 +1,25 @@
 .about-us__header {
+  @include container;
   font-family: "Amatic SC", cursive;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0;
+  text-align: center;
+}
+
+.about-us__persons,
+.about-us__work {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $salad-600-transparent-4;
+    height: 180px;
+    width: 100%;
+    z-index: -1;
+    top: 80px;
+  }
 }
 
 .about-us__subject-header {
@@ -11,7 +27,18 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  margin: 0;
+  text-align: center;
+}
+
+.about-us__persons-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us__persons-inner {
+  @include container;
+  background-color: $white;
 }
 
 .about-us__text {

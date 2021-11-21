@@ -1,8 +1,15 @@
-.contacts__wrapper {
-  background-image: url("../img/photo-list/contacts-background-img.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
+.contacts {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $salad-600-transparent-4;
+    height: 220px;
+    width: 100%;
+    z-index: -1;
+    top: 80px;
+  }
 }
 
 .contacts__header {
@@ -11,6 +18,17 @@
   font-size: 32px;
   line-height: 40px;
   margin: 0;
+}
+
+.contacts__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__inner {
+  @include container;
+  background-color: $white;
 }
 
 .contacts__list {

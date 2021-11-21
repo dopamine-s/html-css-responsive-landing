@@ -3,12 +3,12 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
-}
 
-.site-list__link--header {
-  color: $gray-500;
-}
+  &--header {
+    color: $gray-500;
+  }
 
-.site-list__link--footer {
-  color: $white;
+  &--footer {
+    color: $white;
+  }
 }

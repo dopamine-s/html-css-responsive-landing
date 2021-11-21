@@ -4,22 +4,22 @@
   font-size: 36px;
   line-height: 40px;
   margin: 0;
-}
 
-.offer__slider-header--salad {
-  color: $salad-600;
-}
+  &--salad {
+    color: $salad-600;
+  }
 
-.offer__slider-header--italian {
-  color: $green-500;
-}
+  &--italian {
+    color: $green-500;
+  }
 
-.offer__slider-header--red {
-  color: $red-500;
-}
+  &--red {
+    color: $red-500;
+  }
 
-.offer__slider-header--eastern {
-  color: $brown-500;
+  &--eastern {
+    color: $brown-500;
+  }
 }
 
 .offer__nav-bar {
@@ -93,10 +93,10 @@
 
 .offer__slider-item {
   display: none;
-}
 
-.offer__slider-item--active {
-  display: block;
+  &--active {
+    display: block;
+  }
 }
 
 .offer__slider-item-header {
@@ -131,23 +131,25 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
+
+  &--salad {
+    color: $salad-600;
+  }
+
+  &--italian {
+    color: $green-500;
+  }
+
+  &--meat {
+    color: $red-500;
+  }
+
+  &--eastern {
+    color: $brown-500;
+  }
 }
 
-.offer__slider-output--salad {
-  color: $salad-600;
-}
 
-.offer__slider-output--italian {
-  color: $green-500;
-}
-
-.offer__slider-output--meat {
-  color: $red-500;
-}
-
-.offer__slider-output--eastern {
-  color: $brown-500;
-}
 
 .offer__slider-control {
   display: none;
