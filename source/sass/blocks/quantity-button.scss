@@ -1,0 +1,15 @@
+.quantity-button {
+  border: 1px solid $gray-300-transparent-5;
+  border-radius: 8px;
+  font-weight: 300;
+  line-height: 32px;
+  background-color: $white;
+
+  &--offer {
+    font-size: 24px;
+  }
+
+  &--products {
+    font-size: 16px;
+  }
+}
