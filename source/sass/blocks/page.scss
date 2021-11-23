@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-.page__body--modal>*:not(.feedback-modal):not(.modal):not(.shopping-cart) {
+.page__body--modal> *:not(.feedback-modal):not(.modal):not(.shopping-cart) {
   position: relative;
   filter: blur(25px);
 
