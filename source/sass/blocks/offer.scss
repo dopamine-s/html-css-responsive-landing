@@ -1,6 +1,6 @@
 .offer {
   overflow: hidden;
-  @include container
+  @include container;
 }
 
 .offer__slider-header {
@@ -43,11 +43,11 @@
       margin-left: -72px;
     }
 
-     &--meat {
+    &--meat {
       margin-left: -229px;
     }
 
-     &--eastern {
+    &--eastern {
       margin-left: -300px;
     }
   }
