@@ -3,6 +3,9 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
 
   &--header {
     color: $gray-500;
@@ -10,5 +13,13 @@
 
   &--footer {
     color: $white;
+  }
+
+  &:hover {
+    font-weight: 500;
+  }
+
+  &:active {
+    color: $red-500;
   }
 }

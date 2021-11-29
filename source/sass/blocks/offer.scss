@@ -1,9 +1,15 @@
+.offer {
+  overflow: hidden;
+  @include container
+}
+
 .offer__slider-header {
+  text-align: center;
   font-family: "Amatic SC", cursive;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0;
+  margin-bottom: 16px;
 
   &--salad {
     color: $salad-600;
@@ -23,13 +29,43 @@
 }
 
 .offer__nav-bar {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (max-width: $tablet-width) {
+    &--salad {
+      margin-left: 20px;
+    }
+
+    &--italian {
+      margin-left: -72px;
+    }
+
+     &--meat {
+      margin-left: -229px;
+    }
+
+     &--eastern {
+      margin-left: -300px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1066px;
+    margin: 0 auto 0 440px;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    width: 1500px;
+    margin: 0 auto 0 680px;
+  }
 }
 
 .offer__nav-item {
-  width: 143px;
+  margin-right: 16px;
 }
 
 .offer__nav-link {
@@ -38,7 +74,9 @@
   line-height: 24px;
   border: 1px solid;
   display: block;
-  padding: 8px 16px;
+  padding: 8px 10px;
+  width: 143px;
+  text-align: center;
 }
 
 .offer__nav-bar--salad .offer__nav-link {
@@ -63,6 +101,8 @@
 
 .offer__nav-link--active {
   border: none;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .offer__nav-link--active.offer__nav-link--salad {
@@ -86,16 +126,42 @@
 }
 
 .offer__slider-list {
+  @include container;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .offer__slider-item {
   display: none;
+  @include container;
 
   &--active {
     display: block;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto 0 450px;
+    }
+
+    @media (min-width: $wide-desktop-width) {
+      margin: 0 auto 0 680px;
+    }
+  }
+}
+
+.offer__slider-image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    margin: -150px 0 0 -300px ;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin: -150px 0 0 -500px ;
   }
 }
 
@@ -105,15 +171,33 @@
   font-size: 36px;
   line-height: 40px;
   margin: 0;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 
 .offer__slider-text {
   font-weight: 300;
   margin: 0;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    padding: 0;
+  }
 }
 
 .offer__slider-quantity-buttons {
   margin: 0;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 
 .offer__slider-quantity-button {

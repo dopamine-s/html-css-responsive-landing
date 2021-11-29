@@ -1,3 +1,38 @@
 .page-footer {
   background-color: $salad-700;
 }
+
+.page-footer__bottom-bar {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: min-content auto auto;
+  }
+}
+
+.page-footer__logo {
+  align-self: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.page-footer__main-nav {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    align-self: center;
+  }
+}
+
+.page-footer__social {
+  align-self: center;
+}

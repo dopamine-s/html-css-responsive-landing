@@ -3,10 +3,17 @@
   margin: 0;
   padding: 0;
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .main-nav__list--header {
-  @media (max-width: $desktop-width) {
-    background-color: $salad-100;
+  @media (min-width: $desktop-width) {
+    margin-left: 50px;
   }
 }

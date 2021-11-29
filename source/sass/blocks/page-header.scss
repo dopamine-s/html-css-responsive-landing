@@ -1,18 +1,67 @@
 .page-header {
-  margin-bottom: 24px;
+  margin-bottom: 34px;
 }
 
 .page-header__top-bar--opened {
-  position: relative;
-}
-
-.page-header__top-bar--nojs .page-header__toggle {
-  display: none;
+  @media (max-width: $desktop-width) {
+    position: relative;
+    background-color: $salad-100;
+  }
 }
 
 .page-header__top-bar--opened .main-nav__list--header {
   @media (max-width: $desktop-width) {
     position: absolute;
+    width: 100%;
+    top: 97px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: $salad-100;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0 2px 2px 0 $gray-100;
+  }
+}
+
+.page-header__top-bar--no-js .page-header__logo {
+  @media (max-width: $desktop-width) {
+    margin-right: auto;
+  }
+}
+
+.page-header__top-bar--no-js .page-header__user-nav {
+  margin-right: 24px;
+
+  @media (max-width: $desktop-width) {
+    margin-left: auto;
+  }
+}
+
+.page-header__top-bar--no-js .main-nav__list--header {
+  width: 320px;
+
+  @media (min-width: $tablet-width ) and (max-width: $desktop-width) {
+    width: 690px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin: 30px auto 0 auto;
+  }
+}
+
+.page-header__top-bar--no-js .page-header__toggle {
+  display: none;
+}
+
+.page-header__top-bar--opened .page-header__toggle,
+.page-header__top-bar--closed .page-header__toggle {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -22,15 +71,54 @@
   }
 }
 
-.page-header__logo {
-  margin-left: 68px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  display: inline-block;
+.page-header__wrapper {
+  @include container;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+  }
+
 }
 
+.page-header__logo {
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.page-header__main-nav {
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    order: 2;
+  }
+}
 
 .page-header__toggle {
+  position: relative;
+  margin-left: auto;
+  margin-right: 24px;
+  align-self: center;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
+  border: none;
+  background-color: green;
+}
+
+.page-header__user-nav {
+  position: relative;
+  margin-left: 0;
+  margin-right: 24px;
+  align-self: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: $gray-200;
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
 }
