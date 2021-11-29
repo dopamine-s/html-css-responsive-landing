@@ -41,7 +41,7 @@
 .page-header__top-bar--no-js .main-nav__list--header {
   width: 320px;
 
-  @media (min-width: $tablet-width ) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 690px;
   }
 
@@ -80,7 +80,6 @@
     display: grid;
     grid-template-columns: min-content auto min-content;
   }
-
 }
 
 .page-header__logo {
@@ -104,7 +103,7 @@
   height: 32px;
   cursor: pointer;
   border: none;
-  background-color: green;
+  background-color: $green-200;
 }
 
 .page-header__user-nav {
