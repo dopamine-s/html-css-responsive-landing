@@ -1,3 +1,8 @@
+.about-us {
+  @include container;
+  overflow: hidden;
+}
+
 .about-us__header {
   @include container;
   font-family: "Amatic SC", cursive;

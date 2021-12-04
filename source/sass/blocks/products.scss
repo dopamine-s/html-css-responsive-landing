@@ -8,11 +8,17 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0;
+  margin: 0 0 32px 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .products__slider-item {
+  display: flex;
+  flex-direction: column;
   width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -25,6 +31,78 @@
 
   @media (min-width: $wide-desktop-width) {
     width: 360px;
+  }
+}
+
+.products__slider-item--active .products__slider-image {
+  @media (min-width: $desktop-width) {
+    transform: rotate(10deg);
+  }
+}
+
+.products__slider-image-wrapper {
+  align-self: center;
+}
+
+.products__slider-item--active .products__slider-image-wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &::before, &::after {
+      position: absolute;
+      content: "";
+      border-radius: 50%;
+      box-shadow: 20px 20px 30px $black-100-1;
+    }
+
+    &::before {
+      width: 155px;
+      height: 155px;
+      left: -52px;
+      top: 10px;
+      z-index: 0;
+    }
+  }
+
+  &::after {
+    width: 173px;
+    height: 173px;
+    opacity: 0.2;
+    left: -61px;
+    top: 1px;
+    z-index: -1;
+  }
+}
+
+.products__slider-item--salad .products__slider-image-wrapper {
+  @media (min-width: $desktop-width) {
+    &::before, &::after {
+      background: linear-gradient(320.69deg, $salad-gradient-700 15.36%, $salad-gradient-300 84.86%);
+    }
+  }
+}
+
+.products__slider-item--italian .products__slider-image-wrapper {
+  @media (min-width: $desktop-width) {
+    &::before, &::after {
+      background: linear-gradient(320.42deg, $green-gradient-700 15.36%, $green-gradient-300 82.23%);
+    }
+  }
+}
+
+.products__slider-item--meat .products__slider-image-wrapper {
+  @media (min-width: $desktop-width) {
+    &::before, &::after {
+      background: linear-gradient(321.31deg, $red-gradient-800 15.37%, $red-gradient-500 81.98%);
+    }
+  }
+}
+
+.products__slider-item--eastern .products__slider-image-wrapper {
+  @media (min-width: $desktop-width) {
+    &::before, &::after {
+      background: linear-gradient(324.18deg, $brown-gradient-700 14.36%, $brown-gradient-400 85.34%);
+    }
   }
 }
 

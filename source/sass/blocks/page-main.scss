@@ -1,5 +1,9 @@
-.page-main__offer {
+.page-main__offer  {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 180px;
+  }
 }
 
 .page-main__products {
