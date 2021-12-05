@@ -48,7 +48,8 @@
   @media (min-width: $desktop-width) {
     position: relative;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       position: absolute;
       content: "";
       border-radius: 50%;
@@ -76,7 +77,8 @@
 
 .products__slider-item--salad .products__slider-image-wrapper {
   @media (min-width: $desktop-width) {
-    &::before, &::after {
+    &::before,
+    &::after {
       background: linear-gradient(320.69deg, $salad-gradient-700 15.36%, $salad-gradient-300 84.86%);
     }
   }
@@ -84,7 +86,8 @@
 
 .products__slider-item--italian .products__slider-image-wrapper {
   @media (min-width: $desktop-width) {
-    &::before, &::after {
+    &::before,
+    &::after {
       background: linear-gradient(320.42deg, $green-gradient-700 15.36%, $green-gradient-300 82.23%);
     }
   }
@@ -92,7 +95,8 @@
 
 .products__slider-item--meat .products__slider-image-wrapper {
   @media (min-width: $desktop-width) {
-    &::before, &::after {
+    &::before,
+    &::after {
       background: linear-gradient(321.31deg, $red-gradient-800 15.37%, $red-gradient-500 81.98%);
     }
   }
@@ -100,7 +104,8 @@
 
 .products__slider-item--eastern .products__slider-image-wrapper {
   @media (min-width: $desktop-width) {
-    &::before, &::after {
+    &::before,
+    &::after {
       background: linear-gradient(324.18deg, $brown-gradient-700 14.36%, $brown-gradient-400 85.34%);
     }
   }
