@@ -39,7 +39,7 @@
 .products__slider-item:hover .products__slider-image,
 .products__slider-item:focus-within .products__slider-image {
   @media (min-width: $desktop-width) {
-    transform: scale(1.5    ) rotate(10deg);
+    transform: scale(1.5) rotate(10deg);
     transition: 0.8s;
   }
 }
