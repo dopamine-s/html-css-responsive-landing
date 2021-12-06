@@ -4,20 +4,8 @@
   border: 1px solid;
   border-radius: 50px;
   text-transform: uppercase;
-  display: inline-block;
   text-align: center;
-
-  &--offer {
-    font-size: 18px;
-    padding: 7px 20px 7px 20px;
-    width: 280px;
-  }
-
-  &--products {
-    font-size: 14px;
-    padding: 0 20px;
-    width: 248px;
-  }
+  display: inline-block;
 
   &--salad {
     color: $salad-500;
@@ -33,20 +21,5 @@
 
   &--eastern {
     color: $brown-500;
-  }
-
-  &--contacts {
-    font-size: 16px;
-    padding: 7px 20px 7px 20px;
-    width: 222px;
-    color: $salad-600;
-  }
-
-  &--feedback-modal {
-    font-size: 18px;
-    padding: 7px 20px 7px 20px;
-    width: 232px;
-    color: $salad-600;
-    background-color: $white;
   }
 }

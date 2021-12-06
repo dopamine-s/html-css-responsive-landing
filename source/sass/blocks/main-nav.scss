@@ -1,3 +1,10 @@
+.main-nav {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .main-nav__list {
   list-style: none;
   margin: 0;
@@ -8,12 +15,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 }
 
 .main-nav__list--header {
   @media (min-width: $desktop-width) {
-    margin-left: 50px;
+    margin-left: 121px;
+    margin-right: auto;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-left: 252px;
+    margin-right: auto;
   }
 }

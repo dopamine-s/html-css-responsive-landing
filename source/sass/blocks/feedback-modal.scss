@@ -17,3 +17,11 @@
   line-height: 40px;
   margin: 0;
 }
+
+.feedback-modal__button {
+  font-size: 18px;
+  padding: 7px 20px 7px 20px;
+  min-width: 232px;
+  color: $salad-600;
+  background-color: $white;
+}

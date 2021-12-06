@@ -22,4 +22,19 @@
   &:active {
     color: $red-500;
   }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
+
+.site-list__item {
+  @media (min-width: $desktop-width) {
+    margin-right: 64px;
+  }
+
+   @media (min-width: $wide-desktop-width) {
+    margin-right: 88px;
+  }
 }

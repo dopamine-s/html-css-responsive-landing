@@ -12,7 +12,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
 
   &--salad {
     color: $salad-600;
@@ -30,13 +30,21 @@
     color: $brown-500;
   }
 
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 24px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 440px;
     text-align: left;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $wide-desktop-width) {
     padding-left: 680px;
+    margin-bottom: 33px;
   }
 }
 
@@ -71,6 +79,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 440px;
+    margin-bottom: 40px;
     justify-content: flex-start;
   }
 
@@ -96,6 +105,10 @@
   }
 }
 
+.offer__nav-item:last-of-type {
+  margin-right: 0;
+}
+
 .offer__nav-link {
   font-weight: 400;
   font-size: 18px;
@@ -103,8 +116,9 @@
   border: 1px solid;
   display: block;
   padding: 8px 10px;
-  width: 143px;
+  min-width: 143px;
   text-align: center;
+  white-space: nowrap;
 }
 
 .offer__nav-bar--salad .offer__nav-link {
@@ -172,7 +186,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    margin: 0 auto 0 450px;
+    margin: 0 auto 0 440px;
   }
 
   @media (min-width: $wide-desktop-width) {
@@ -318,20 +332,25 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0;
+  margin: 0 0 8px 0;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 60px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 64px;
+    line-height: 80px;
     text-align: left;
     padding-left: 0;
     max-width: 600px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -341,13 +360,18 @@
 
 .offer__slider-text {
   font-weight: 300;
-  margin: 0;
+  margin: 0 0 24px 0;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    padding: 0;
     text-align: left;
     max-width: 600px;
   }
@@ -358,23 +382,36 @@
 }
 
 .offer__slider-quantity-buttons {
-  margin: 0;
-  text-align: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: min-content min-content min-content;
+  padding: 0;
+  margin: 0 0 24px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 
   @media (min-width: $desktop-width) {
-    text-align: left;
+    justify-content: left;
   }
 }
 
 .offer__slider-quantity-button {
+  display: flex;
   width: 32px;
   height: 32px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 .offer__slider-output {
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
+  margin-left: 25px;
+  margin-right: 25px;
 
   &--salad {
     color: $salad-600;
@@ -394,16 +431,48 @@
 }
 
 .offer__slider-link-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+    justify-content: start;
   }
 
   @media (min-width: $wide-desktop-width) {
     margin-bottom: 130px;
+  }
+}
+
+.offer__slider-link-button {
+  white-space: nowrap;
+  font-size: 18px;
+  padding: 7px 20px 7px 20px;
+  min-width: 280px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+    padding: 7px 47px 7px 47px;
+    min-width: 203px;
+  }
+}
+
+.offer__slider-link-button:last-of-type {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 
