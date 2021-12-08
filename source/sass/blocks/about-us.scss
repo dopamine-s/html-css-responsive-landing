@@ -4,12 +4,22 @@
 }
 
 .about-us__header {
-  @include container;
   font-family: "Amatic SC", cursive;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
+  margin: 0 0 16px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .about-us__persons,
@@ -33,17 +43,46 @@
   font-size: 24px;
   line-height: 30px;
   text-align: center;
+  margin: 0 0 8px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 16px;
+    text-align: left;
+  }
 }
 
 .about-us__persons-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .about-us__persons-inner {
   @include container;
   background-color: $white;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    padding: 24px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-bottom: 32px;
+    padding: 48px;
+  }
+}
+
+.about-us__persons-inner:last-of-type {
+  margin-bottom: 0;
 }
 
 .about-us__text {
@@ -51,4 +90,11 @@
   font-size: 12px;
   line-height: 20px;
   margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
 }

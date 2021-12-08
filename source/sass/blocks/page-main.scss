@@ -20,6 +20,10 @@
 
 .page-main__products {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .page-main__about-us {
