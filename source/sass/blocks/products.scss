@@ -1,7 +1,6 @@
 .products__slider {
-  overflow: hidden;
-
   @include container;
+  overflow: hidden;
 }
 
 .products__slider-header {
@@ -149,7 +148,7 @@
 .products__slider-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 30px;
+  column-gap: 30px;
   list-style: none;
   padding: 0;
   margin-left: 20px;
@@ -163,7 +162,7 @@
   }
 
   @media (min-width: $wide-desktop-width) {
-    grid-column-gap: 20px;
+    column-gap: 20px;
   }
 }
 
@@ -267,7 +266,7 @@
 
 .products__slider-inner {
   display: grid;
-  grid-row-gap: 16px;
+  row-gap: 16px;
   min-width: 134px;
   margin-bottom: 24px;
   margin-top: auto;

@@ -1,5 +1,7 @@
 .contacts {
+  @include container;
   position: relative;
+
 
   &::before {
     position: absolute;

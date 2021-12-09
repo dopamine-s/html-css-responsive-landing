@@ -1,16 +1,88 @@
+.payment-and-delivery__delivery,
+.payment-and-delivery__payment {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 30px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    column-gap: 20px;
+  }
+}
+
+.payment-and-delivery__delivery {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.payment-and-delivery__payment {
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+  }
+}
+
 .payment-and-delivery__header {
   font-family: "Amatic SC", cursive;
   font-weight: 400;
   font-size: 32px;
   line-height: 40px;
-  margin: 0;
+  margin: 0 auto 8px auto;
+}
+
+.payment-and-delivery__header--delivery {
+  @media (min-width: $tablet-width) {
+    order: 2;
+    grid-column: 2 / 3;
+    margin: 0;
+    align-self: center;
+  }
+}
+
+.payment-and-delivery__header--payment {
+  @media (min-width: $tablet-width) {
+    order: 1;
+    grid-column: 1 / 2;
+    margin: 0 0 0 auto;
+    align-self: center;
+  }
 }
 
 .payment-and-delivery__list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  padding: 0;
   margin: 0;
   background-color: $salad-100;
+  justify-content: center;
+}
+
+.payment-and-delivery__item {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.payment-and-delivery__list--delivery {
+  column-gap: 40px;
+  padding: 24px 27px 24px 26px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+}
+
+.payment-and-delivery__list--payment {
+  column-gap: 24px;
+  padding: 24px 25px 24px 24px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    order: 2;
+    grid-column: 2 / 3;
+  }
 }
 
 .payment-and-delivery__link {
@@ -19,4 +91,5 @@
   font-size: 12px;
   line-height: 14px;
   color: $gray-500;
+  text-align: center;
 }
