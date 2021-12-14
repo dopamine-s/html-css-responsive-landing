@@ -1,6 +1,5 @@
 .about-us {
   @include container;
-  overflow: hidden;
 }
 
 .about-us__header {
@@ -13,7 +12,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 48px;
-    line-height: 60px;
+    line-height: 61px;
     margin-bottom: 45px;
   }
 
@@ -32,8 +31,30 @@
     background-color: $salad-600-transparent-4;
     height: 180px;
     width: 100%;
-    z-index: -1;
+    z-index: -2;
     top: 80px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 30px;
+      width: 50%;
+      height: 280px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 10%
+    }
+  }
+}
+
+.about-us__work {
+  @media (min-width: $tablet-width) {
+    &::before {
+      right: 0;
+    }
   }
 }
 
@@ -53,7 +74,8 @@
   }
 }
 
-.about-us__persons-image {
+.about-us__persons-image,
+.about-us__work-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -64,25 +86,66 @@
   }
 }
 
-.about-us__persons-inner {
-  @include container;
+.about-us__persons-image {
+  position: relative;
+  z-index: -1;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 250px;
+  }
+}
+
+.about-us__work-image {
+    @media (min-width: $desktop-width) {
+    margin-right: 250px;
+  }
+}
+
+.about-us__persons-inner,
+.about-us__work-inner {
   background-color: $white;
   padding: 16px 20px;
-  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
     padding: 24px;
   }
 
   @media (min-width: $wide-desktop-width) {
-    margin-bottom: 32px;
     padding: 48px;
   }
 }
 
-.about-us__persons-inner:last-of-type {
-  margin-bottom: 0;
+.about-us__persons-inner {
+  margin: 0 auto 16px auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 460px;
+    margin-top: -180px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.about-us__work-inner {
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 460px;
+    margin-top: -180px;
+  }
 }
 
 .about-us__text {

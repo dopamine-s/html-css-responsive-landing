@@ -2,12 +2,11 @@
   @include container;
   position: relative;
 
-
   &::before {
     position: absolute;
     content: "";
     background-color: $salad-600-transparent-4;
-    height: 220px;
+    height: 300px;
     width: 100%;
     z-index: -1;
     top: 80px;
@@ -15,41 +14,103 @@
 }
 
 .contacts__header {
+  display: block;
   font-family: "Amatic SC", cursive;
   font-weight: 400;
   font-size: 32px;
   line-height: 40px;
-  margin: 0;
+  margin: 0 0 16px 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 61px;
+    margin-bottom: 40px;
+  }
 }
 
 .contacts__image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 16px auto;
 }
 
 .contacts__inner {
-  @include container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 11px 16px 16px 16px;
+  width: 300px;
   background-color: $white;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 10px 35px $gray-250-transparent-1;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px;
+    width: 393px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px;
+    width: 377px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px;
+    width: 425px;
+  }
+}
+
+.contacts__mail {
+  margin: 0;
 }
 
 .contacts__list {
   list-style: none;
+  width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 0 16px 0;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__item {
+  margin-bottom: 24px;
+}
+
+.contacts__item:last-of-type {
+  margin-bottom: 0;
 }
 
 .contacts__link {
   display: block;
   font-weight: 300;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 17px;
   color: $gray-500;
+  padding-left: 48px;
+  word-wrap: break-word;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 64px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    line-height: 24px;
+  }
 }
 
 .contacts__button {
-  font-size: 16px;
   padding: 7px 20px 7px 20px;
-  min-width: 222px;
+  width: 222px;
   color: $salad-600;
 }

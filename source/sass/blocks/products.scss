@@ -14,7 +14,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
     font-size: 48px;
-    line-height: 60px;
+    line-height: 61px;
   }
 }
 
@@ -45,7 +45,6 @@
 .products__slider-item:focus-within .products__slider-image {
   @media (min-width: $desktop-width) {
     transform: scale(1.5) rotate(10deg);
-    transition: 0.8s;
   }
 }
 
@@ -170,6 +169,7 @@
   width: 100%;
   height: 184px;
   object-fit: cover;
+  transition: 0.8s;
 
   @media (min-width: $wide-desktop-width) {
     height: 241px;

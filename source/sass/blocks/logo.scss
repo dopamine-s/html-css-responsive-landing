@@ -3,6 +3,18 @@
   z-index: 1;
 }
 
+.logo path {
+  fill: $white;
+}
+
+.logo:hover path {
+  fill: $gray-500;
+}
+
+.logo:active path {
+  fill: black;
+}
+
 .logo--header {
   &::before {
     content: "";

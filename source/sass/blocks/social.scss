@@ -4,9 +4,22 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .social__item {
+  width: 24px;
+  height: 24px;
   margin-right: 32px;
+}
+
+.social__icon path {
+  fill: $white;
+}
+
+.social__item:hover path  {
+  fill: $gray-500;
+}
+
+.social__item:active path  {
+  fill: black;
 }
