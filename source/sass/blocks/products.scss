@@ -108,6 +108,47 @@
   }
 }
 
+.products__slider-item:hover .products__slider-link-button:hover,
+.products__slider-item:focus-within .products__slider-link-button:hover {
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.products__slider-item:active .products__slider-link-button:hover {
+  @media (min-width: $desktop-width) {
+    opacity: 0.6;
+  }
+}
+
+.products__slider-item:hover .button--salad:hover,
+.products__slider-item:focus-within .button--salad:hover {
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(320.69deg, $salad-gradient-700 15.36%, $salad-gradient-300 84.86%);
+  }
+}
+
+.products__slider-item:hover .button--italian:hover,
+.products__slider-item:focus-within .button--italian:hover {
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(320.42deg, $green-gradient-700 15.36%, $green-gradient-300 82.23%);
+  }
+}
+
+.products__slider-item:hover .button--meat:hover,
+.products__slider-item:focus-within .button--meat:hover {
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(321.31deg, $red-gradient-800 15.37%, $red-gradient-500 81.98%);
+  }
+}
+
+.products__slider-item:hover .button--eastern:hover,
+.products__slider-item:focus-within .button--eastern:hover {
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(324.18deg, $brown-gradient-700 14.36%, $brown-gradient-400 85.34%);
+  }
+}
+
 .products__slider-item--salad .products__slider-image-wrapper {
   @media (min-width: $desktop-width) {
     &::before,

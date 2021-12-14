@@ -11,6 +11,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: min-content auto auto;
+    margin-bottom: 40px;
   }
 }
 
@@ -21,7 +22,7 @@
 }
 
 .page-footer__main-nav {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
@@ -35,4 +36,13 @@
 
 .page-footer__social {
   align-self: center;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }

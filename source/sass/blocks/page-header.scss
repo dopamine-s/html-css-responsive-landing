@@ -132,7 +132,7 @@
 .page-header__top-bar--opened .page-header__toggle {
   &::before,
   &::after {
-    top: 1px;
+    top: -1px;
     left: 15px;
     width: 1px;
     height: 30px;
