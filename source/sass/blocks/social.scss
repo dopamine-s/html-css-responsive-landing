@@ -16,10 +16,10 @@
   fill: $white;
 }
 
-.social__item:hover path  {
+.social__item:hover path {
   fill: $gray-500;
 }
 
-.social__item:active path  {
-  fill: black;
+.social__item:active path {
+  fill: $black;
 }

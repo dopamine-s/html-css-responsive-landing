@@ -45,7 +45,7 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      width: 10%
+      width: 10%;
     }
   }
 }
@@ -96,7 +96,7 @@
 }
 
 .about-us__work-image {
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-right: 250px;
   }
 }
