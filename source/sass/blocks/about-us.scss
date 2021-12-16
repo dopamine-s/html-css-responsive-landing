@@ -37,15 +37,28 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      top: 30px;
-      width: 50%;
-      height: 280px;
+      top: 48px;
+      width: 209px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::before {
-      width: 10%;
+      width: 153px;
+    }
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    &::before {
+      width: 195px;
+    }
+  }
+}
+
+.about-us__persons {
+  @media (min-width: $tablet-width) {
+    &::before {
+      height: 357px;
     }
   }
 }
@@ -54,6 +67,19 @@
   @media (min-width: $tablet-width) {
     &::before {
       right: 0;
+      height: 333px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      margin-right: 74px;
+    }
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    &::before {
+      margin-right: 0;
     }
   }
 }
@@ -76,6 +102,8 @@
 
 .about-us__persons-image,
 .about-us__work-image {
+  position: relative;
+  z-index: -1;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -87,17 +115,42 @@
 }
 
 .about-us__persons-image {
-  position: relative;
-  z-index: -1;
+  @media (min-width: $tablet-width) {
+    width: 448px;
+    height: 314px;
+    object-fit: cover;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-left: 250px;
+    margin-left: 85px;
+    width: 433px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    width: 528px;
+    height: 357px;
   }
 }
 
 .about-us__work-image {
+  @media (min-width: $tablet-width) {
+    width: 448px;
+    height: 302px;
+    object-fit: cover;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-right: 250px;
+    margin-left: auto;
+    margin-right: 159px;
+    width: 433px;
+    height: 302px;
+    object-fit: cover;
+  }
+
+   @media (min-width: $wide-desktop-width) {
+    width: 528px;
+    height: 333px;
+    margin-right: 85px;
   }
 }
 
@@ -120,15 +173,19 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 64px;
+    margin-top: -40px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 460px;
-    margin-top: -180px;
+    margin-top: -260px;
   }
 
   @media (min-width: $wide-desktop-width) {
     margin-bottom: 32px;
+    margin-left: 580px;
+    margin-top: -310px;
   }
 }
 
@@ -140,11 +197,17 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 64px;
+    margin-top: -5px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 460px;
-    margin-top: -180px;
+    margin-top: -255px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-right: 580px;
+    margin-top: -290px;
   }
 }
 

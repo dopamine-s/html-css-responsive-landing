@@ -92,6 +92,7 @@
 .payment-and-delivery__list--delivery {
   column-gap: 40px;
   padding: 24px 27px 24px 26px;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
@@ -105,6 +106,7 @@
 .payment-and-delivery__list--payment {
   column-gap: 24px;
   padding: 24px 25px 24px 24px;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     padding: 16px 24px 16px 24px;
