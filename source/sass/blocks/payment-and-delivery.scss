@@ -1,19 +1,26 @@
 .payment-and-delivery {
   overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .payment-and-delivery__delivery,
 .payment-and-delivery__payment {
   display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     column-gap: 30px;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1366px;
   }
 
   @media (min-width: $wide-desktop-width) {
     column-gap: 20px;
+    width: 1920px;
   }
 }
 
@@ -21,22 +28,33 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 50px;
+    margin-bottom: 80px;
+    grid-template-columns: 489px auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 120px;
     margin-bottom: 64px;
+    grid-template-columns: 759px auto;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-bottom: 64px;
+    grid-template-columns: 823px auto;
   }
 }
 
 .payment-and-delivery__payment {
   @media (min-width: $tablet-width) {
-    margin-left: 50px;
+    grid-template-columns: auto 489px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 120px;
+    grid-template-columns: auto 759px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-bottom: 64px;
+    grid-template-columns: auto 823px;
   }
 }
 
@@ -74,7 +92,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
+  margin: 0 auto 0 auto;
   background-color: $salad-100;
   justify-content: center;
   width: 100%;
@@ -92,7 +110,6 @@
 .payment-and-delivery__list--delivery {
   column-gap: 40px;
   padding: 24px 27px 24px 26px;
-  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
@@ -106,7 +123,6 @@
 .payment-and-delivery__list--payment {
   column-gap: 24px;
   padding: 24px 25px 24px 24px;
-  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     padding: 16px 24px 16px 24px;
