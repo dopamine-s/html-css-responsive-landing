@@ -42,7 +42,7 @@
   display: block;
   margin: 0 auto 16px auto;
 
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 568px;
     height: 324px;
     object-fit: cover;
