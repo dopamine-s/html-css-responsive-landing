@@ -21,21 +21,16 @@
 .products__slider-item {
   display: flex;
   flex-direction: column;
-  width: 280px;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 329px;
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 244px;
-  }
-
   @media (min-width: $wide-desktop-width) {
-    width: 360px;
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -187,20 +182,22 @@
 
 .products__slider-list {
   display: grid;
-  column-gap: 30px;
+  grid-template-columns: repeat(4, 320px);
   list-style: none;
   padding: 0;
-  margin-left: 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin-left: 1px;
+    grid-template-columns: repeat(4, 329px);
+    column-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    grid-template-columns: repeat(4, 244px);
   }
 
   @media (min-width: $wide-desktop-width) {
+    grid-template-columns: repeat(4, 360px);
     column-gap: 20px;
   }
 }
