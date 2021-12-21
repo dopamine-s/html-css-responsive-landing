@@ -99,11 +99,94 @@
 }
 
 .payment-and-delivery__item {
+  position: relative;
   display: flex;
+  text-align: center;
+}
+
+.payment-and-delivery__link {
   padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     padding-top: 56px;
+  }
+}
+
+.payment-and-delivery__link::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.payment-and-delivery__link--new-post::before {
+  top: 0;
+  left: 20px;
+  background-image: url("../img/photo-list/delivery-new-post-mobile-icon.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/photo-list/delivery-new-post-icon.svg");
+  }
+}
+
+.payment-and-delivery__link--ukr-post::before {
+  top: 0;
+  left: 10px;
+  background-image: url("../img/photo-list/delivery-ukr-post-mobile-icon.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/photo-list/delivery-ukr-post-icon.svg");
+  }
+}
+
+.payment-and-delivery__link--pickup::before {
+  top: 0;
+  left: 10px;
+  background-image: url("../img/photo-list/delivery-pickup-mobile-icon.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/photo-list/delivery-pickup-icon.svg");
+  }
+}
+
+.payment-and-delivery__link--pod::before {
+  top: 0;
+  left: 15px;
+  background-image: url("../img/photo-list/payment-pod-mobile-icon.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/photo-list/payment-pod-icon.svg");
+  }
+}
+
+.payment-and-delivery__link--credit-card::before {
+  top: 0;
+  left: 15px;
+  background-image: url("../img/photo-list/payment-credit-card-mobile-icon.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/photo-list/payment-credit-card-icon.svg");
+  }
+}
+
+.payment-and-delivery__link--cash::before {
+  top: 0;
+  left: 35px;
+  background-image: url("../img/photo-list/payment-cash-mobile-icon.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/photo-list/payment-cash-icon.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 90px;
   }
 }
 
