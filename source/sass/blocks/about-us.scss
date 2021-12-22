@@ -1,5 +1,10 @@
 .about-us {
   @include container;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .about-us__header {

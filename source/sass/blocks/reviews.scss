@@ -1,6 +1,15 @@
 .reviews {
   @include container;
   overflow: hidden;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-bottom: 73px;
+  }
 }
 
 .reviews__header {

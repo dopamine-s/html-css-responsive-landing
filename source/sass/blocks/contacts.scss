@@ -1,6 +1,7 @@
 .contacts {
   @include container;
   position: relative;
+  margin-bottom: 40px;
 
   &::before {
     position: absolute;
@@ -13,6 +14,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+
     &::before {
       height: 424px;
       width: 209px;

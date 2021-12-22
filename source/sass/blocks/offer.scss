@@ -1,5 +1,22 @@
 .offer {
   @include container;
+  margin-top: 24px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 42px;
+    margin-bottom: 80px;
+  }
 }
 
 .offer__slider-header {
