@@ -63,13 +63,11 @@
 }
 
 .logo__header-image--tablet {
-  @media (min-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
     display: none;
   }
-}
 
-.logo__header-image--tablet {
-  @media (max-width: $mobile-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -78,9 +76,7 @@
   @media (max-width: $desktop-width) {
     display: none;
   }
-}
 
-.logo__header-image--desktop {
   @media (min-width: $wide-desktop-width) {
     display: none;
   }
