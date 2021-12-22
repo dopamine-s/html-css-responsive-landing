@@ -38,3 +38,17 @@
     margin-right: 88px;
   }
 }
+
+.site-list__item--footer {
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-right: 88px;
+  }
+}
+
+.site-list__item--footer:last-of-type {
+  margin-right: 0;
+}

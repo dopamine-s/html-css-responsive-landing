@@ -1,31 +1,30 @@
-.main-nav {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
 .main-nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
   width: 100%;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 }
 
 .main-nav__list--header {
   @media (min-width: $desktop-width) {
     margin-left: 121px;
     margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $wide-desktop-width) {
     margin-left: 252px;
     margin-right: auto;
+  }
+}
+
+.main-nav__list--footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
