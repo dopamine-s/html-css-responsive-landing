@@ -1,5 +1,4 @@
 .payment-and-delivery {
-  overflow: hidden;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
@@ -9,10 +8,22 @@
 
 .payment-and-delivery__delivery,
 .payment-and-delivery__payment {
+  position: relative;
   display: grid;
   margin-left: auto;
   margin-right: auto;
   width: 320px;
+
+  &::before {
+    position: absolute;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    filter: drop-shadow(8px 8px 15px $black-100-transparent-15);
+    content: "";
+    z-index: 1;
+  }
 
   @media (min-width: $tablet-width) {
     column-gap: 30px;
@@ -32,34 +43,92 @@
 .payment-and-delivery__delivery {
   margin-bottom: 40px;
 
+  &::before {
+    width: 78px;
+    height: 99px;
+    top: -50px;
+    right: 0;
+    background-image: url("../img/photo-list/payment-and-delivery-picture-right-mobile.png");
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
     grid-template-columns: 489px auto;
+
+    &::before {
+      width: 104px;
+      height: 147px;
+      top: 40px;
+      right: 0;
+      background-image: url("../img/photo-list/payment-and-delivery-picture-right-tablet.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 64px;
     grid-template-columns: 759px auto;
+
+    &::before {
+      top: 85px;
+      right: 86px;
+    }
   }
 
   @media (min-width: $wide-desktop-width) {
     margin-bottom: 64px;
     grid-template-columns: 823px auto;
+
+    &::before {
+      width: 149px;
+      height: 186px;
+      top: 40px;
+      right: 210px;
+      background-image: url("../img/photo-list/payment-and-delivery-picture-right-wide-desktop.png");
+    }
   }
 }
 
 .payment-and-delivery__payment {
+  &::before {
+    width: 113px;
+    height: 86px;
+    top: -30px;
+    left: -5px;
+    background-image: url("../img/photo-list/payment-and-delivery-picture-left-mobile.png");
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: auto 489px;
+
+    &::before {
+      width: 191px;
+      height: 144px;
+      top: -110px;
+      left: 0;
+      background-image: url("../img/photo-list/payment-and-delivery-picture-left-tablet.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: auto 759px;
+
+    &::before {
+      top: -105px;
+      left: 86px;
+    }
   }
 
   @media (min-width: $wide-desktop-width) {
     margin-bottom: 64px;
     grid-template-columns: auto 823px;
+
+    &::before {
+      width: 232px;
+      height: 175px;
+      top: -105px;
+      left: 210px;
+      background-image: url("../img/photo-list/payment-and-delivery-picture-left-wide-desktop.png");
+    }
   }
 }
 

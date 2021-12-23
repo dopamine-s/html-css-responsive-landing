@@ -1,6 +1,5 @@
 .reviews {
   @include container;
-  overflow: hidden;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
@@ -33,6 +32,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 330px 330px auto;
@@ -70,8 +70,4 @@
 
 .reviews__toggles {
   margin: 0;
-}
-
-.reviews__controls {
-  display: none;
 }

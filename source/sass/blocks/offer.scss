@@ -342,14 +342,14 @@
       width: 481px;
       height: 481px;
       top: -5px;
-      left: -640px;
+      left: -590px;
     }
 
     &::after {
       width: 557px;
       height: 557px;
       top: -40px;
-      left: -675px;
+      left: -625px;
     }
   }
 }
@@ -371,7 +371,7 @@
   }
 
   @media (min-width: $wide-desktop-width) {
-    margin: -150px 0 0 -500px;
+    margin: -150px 0 0 -450px;
     width: 387px;
     height: 694px;
   }
@@ -520,8 +520,4 @@
   @media (min-width: $tablet-width) {
     margin-right: 0;
   }
-}
-
-.offer__slider-control {
-  display: none;
 }
