@@ -1,21 +1,26 @@
 .offer {
-  @include container;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 24px;
   margin-bottom: 40px;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-bottom: 75px;
+    width: 690px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 19px;
     margin-bottom: 80px;
+    width: 1366px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $wide-desktop-width) {
     margin-top: 42px;
     margin-bottom: 80px;
+    width: 1500px;
   }
 }
 
@@ -50,13 +55,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 440px;
+    padding-left: 607px;
     text-align: left;
     margin-bottom: 32px;
   }
 
   @media (min-width: $wide-desktop-width) {
-    padding-left: 680px;
+    padding-left: 764px;
     margin-bottom: 33px;
   }
 }
@@ -92,13 +97,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 440px;
+    margin-left: 607px;
     margin-bottom: 40px;
     justify-content: flex-start;
   }
 
   @media (min-width: $wide-desktop-width) {
-    margin-left: 680px;
+    margin-left: 764px;
   }
 }
 
@@ -200,11 +205,13 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    margin: 0 auto 0 440px;
+    margin: 0 auto 0 607px;
+    max-width: 609px;
   }
 
   @media (min-width: $wide-desktop-width) {
-    margin: 0 auto 0 680px;
+    margin: 0 auto 0 764px;
+    max-width: 692px;
   }
 }
 
@@ -325,15 +332,15 @@
     &::before {
       width: 339px;
       height: 339px;
-      top: -45px;
-      left: -450px;
+      top: -75px;
+      left: -430px;
     }
 
     &::after {
       width: 393px;
       height: 393px;
-      top: -72px;
-      left: -477px;
+      top: -102px;
+      left: -457px;
     }
   }
 
@@ -365,7 +372,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    margin: -120px 0 0 -350px;
+    margin: -165px 0 0 -320px;
     width: 287px;
     height: 504px;
   }
