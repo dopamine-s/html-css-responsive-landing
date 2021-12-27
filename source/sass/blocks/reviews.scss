@@ -52,26 +52,28 @@
 
 .reviews__image {
   display: block;
-  width: 280px;
-  height: 384px;
+  width: 350px;
+  height: 455px;
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
   filter: drop-shadow(10px 10px 35px $gray-250-transparent-1);
 
   @media (min-width: $tablet-width) {
-    width: auto;
-    height: 454px;
+    width: 400px;
+    height: 525px;
     margin-left: 0;
     margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
-    height: 461px;
+    width: 405px;
+    height: 531px;
   }
 
   @media (min-width: $wide-desktop-width) {
-    height: 669px;
+    width: 557px;
+    height: 739px;
   }
 }
 
