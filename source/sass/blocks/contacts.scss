@@ -61,6 +61,8 @@
 .contacts__image {
   display: block;
   margin: 0 auto 16px auto;
+  width: 280px;
+  height: 214px;
 
   @media (min-width: $tablet-width) {
     width: 568px;

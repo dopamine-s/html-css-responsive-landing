@@ -60,7 +60,7 @@
 .products__slider-item:hover .products__slider-image,
 .products__slider-item:focus-within .products__slider-image {
   @media (min-width: $desktop-width) {
-    transform: scale(1.5) rotate(10deg);
+    transform: scale(1.28) rotate(10deg);
   }
 }
 
@@ -92,8 +92,8 @@
     &::before {
       width: 155px;
       height: 155px;
-      left: -52px;
-      top: 10px;
+      left: -53px;
+      top: 6px;
       z-index: 0;
     }
 
@@ -101,8 +101,8 @@
       width: 173px;
       height: 173px;
       opacity: 0.2;
-      left: -61px;
-      top: 1px;
+      left: -62px;
+      top: -3px;
       z-index: -1;
     }
   }
@@ -111,15 +111,15 @@
     &::before {
       width: 252px;
       height: 252px;
-      left: -90px;
-      top: -14px;
+      left: -100px;
+      top: 6px;
     }
 
     &::after {
       width: 284px;
       height: 284px;
-      left: -105px;
-      top: -30px;
+      left: -115px;
+      top: -10px;
     }
   }
 }
@@ -226,7 +226,6 @@
 .products__slider-image {
   width: 100%;
   height: 184px;
-  object-fit: cover;
   transition: 0.8s;
 
   @media (min-width: $wide-desktop-width) {

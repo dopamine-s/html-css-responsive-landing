@@ -113,6 +113,9 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 16px;
+  width: 280px;
+  height: 214px;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -123,7 +126,6 @@
   @media (min-width: $tablet-width) {
     width: 448px;
     height: 314px;
-    object-fit: cover;
   }
 
   @media (min-width: $desktop-width) {
@@ -141,7 +143,6 @@
   @media (min-width: $tablet-width) {
     width: 448px;
     height: 302px;
-    object-fit: cover;
   }
 
   @media (min-width: $desktop-width) {
@@ -149,7 +150,6 @@
     margin-right: 159px;
     width: 433px;
     height: 302px;
-    object-fit: cover;
   }
 
   @media (min-width: $wide-desktop-width) {

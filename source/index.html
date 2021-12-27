@@ -17,7 +17,7 @@
   </head>
   <body class="page__body">
     <header class="page__header page-header">
-      <div class="page-header__top-bar page-header__top-bar--opened">
+      <div class="page-header__top-bar page-header__top-bar--closed">
         <div class="page-header__wrapper">
           <a class="page-header__logo logo logo--header" href="index.html">
             <svg class="logo__header-image logo__header-image--mobile" width="38" height="81" viewBox="0 0 38 81" fill="none">
@@ -121,7 +121,12 @@
           <ul class="offer__slider-list">
             <li class="offer__slider-item offer__slider-item--salad offer__slider-item--active">
               <div class="offer__slider-image-wrapper">
-                <img class="offer__slider-image" src="img/photo-list/offer-img-mobile-1.png" width="204" height="335" alt="Масло «Для салата»"/>
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/photo-list/offer-img-wide-desktop-1@2x.png 2x, img/photo-list/offer-img-wide-desktop-1@1x.png 1x">
+                  <source media="(min-width: 1366px)" srcset="img/photo-list/offer-img-desktop-1@2x.png 2x, img/photo-list/offer-img-desktop-1@1x.png 1x">
+                  <source media="(min-width: 768px)" srcset="img/photo-list/offer-img-tablet-1@2x.png 2x, img/photo-list/offer-img-tablet-1@1x.png 1x">
+                  <img class="offer__slider-image" src="img/photo-list/offer-img-mobile-1@1x.png" srcset="img/photo-list/offer-img-mobile-1@2x.png 2x" alt="Масло «Для салата»">
+                </picture>
               </div>
               <h3 class="offer__slider-item-header">
                 Масло “Для салата”
@@ -153,7 +158,12 @@
             </li>
             <li class="offer__slider-item offer__slider-item--italian">
               <div class="offer__slider-image-wrapper">
-                <img class="offer__slider-image" src="img/photo-list/offer-img-mobile-2.png" width="223" height="298" alt="Масло «Итальянское»"/>
+               <picture>
+                  <source media="(min-width: 1920px)" srcset="img/photo-list/offer-img-wide-desktop-2@2x.png 2x, img/photo-list/offer-img-wide-desktop-2@1x.png 1x">
+                  <source media="(min-width: 1366px)" srcset="img/photo-list/offer-img-desktop-2@2x.png 2x, img/photo-list/offer-img-desktop-2@1x.png 1x">
+                  <source media="(min-width: 768px)" srcset="img/photo-list/offer-img-tablet-2@2x.png 2x, img/photo-list/offer-img-tablet-2@1x.png 1x">
+                  <img class="offer__slider-image" src="img/photo-list/offer-img-mobile-2@1x.png" srcset="img/photo-list/offer-img-mobile-2@2x.png 2x" alt="Масло «Итальянское»">
+                </picture>
               </div>
               <h3 class="offer__slider-item-header">
                 Масло “Итальянское”
@@ -185,7 +195,12 @@
             </li>
             <li class="offer__slider-item offer__slider-item--meat">
               <div class="offer__slider-image-wrapper">
-                <img class="offer__slider-image" src="img/photo-list/offer-img-mobile-3.png" width="186" height="298" alt="Масло «Для мяса»"/>
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/photo-list/offer-img-wide-desktop-3@2x.png 2x, img/photo-list/offer-img-wide-desktop-3@1x.png 1x">
+                  <source media="(min-width: 1366px)" srcset="img/photo-list/offer-img-desktop-3@2x.png 2x, img/photo-list/offer-img-desktop-3@1x.png 1x">
+                  <source media="(min-width: 768px)" srcset="img/photo-list/offer-img-tablet-3@2x.png 2x, img/photo-list/offer-img-tablet-3@1x.png 1x">
+                  <img class="offer__slider-image" src="img/photo-list/offer-img-mobile-3@1x.png" srcset="img/photo-list/offer-img-mobile-3@2x.png 2x" alt="Масло «Для мяса»">
+                </picture>
               </div>
               <h3 class="offer__slider-item-header">
                 Масло “Для мяса”
@@ -217,7 +232,12 @@
             </li>
             <li class="offer__slider-item offer__slider-item--eastern">
               <div class="offer__slider-image-wrapper">
-                <img class="offer__slider-image" src="img/photo-list/offer-img-mobile-4.png" width="198" height="299" alt="Масло «Восточное»"/>
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/photo-list/offer-img-wide-desktop-4@2x.png 2x, img/photo-list/offer-img-wide-desktop-4@1x.png 1x">
+                  <source media="(min-width: 1366px)" srcset="img/photo-list/offer-img-desktop-4@2x.png 2x, img/photo-list/offer-img-desktop-4@1x.png 1x">
+                  <source media="(min-width: 768px)" srcset="img/photo-list/offer-img-tablet-4@2x.png 2x, img/photo-list/offer-img-tablet-4@1x.png 1x">
+                  <img class="offer__slider-image" src="img/photo-list/offer-img-mobile-4@1x.png" srcset="img/photo-list/offer-img-mobile-4@2x.png 2x" alt="Масло «Восточное»">
+                </picture>
               </div>
               <h3 class="offer__slider-item-header">
                 Масло “Восточное”
@@ -270,7 +290,10 @@
           <ul class="products__slider-list">
             <li class="products__slider-item products__slider-item--salad">
               <div class="products__slider-image-wrapper">
-                <img class="products__slider-image" src="img/photo-list/products-img-mobile-1.png" width="42" height="180" alt="Масло «Для салата»"/>
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/photo-list/products-img-wide-desktop-4@2x.png 2x, img/photo-list/products-img-wide-desktop-4@1x.png 1x">
+                  <img class="products__slider-image" src="img/photo-list/products-img-mobile-1@1x.png" srcset="img/photo-list/products-img-mobile-1@2x.png 2x" alt="Масло «Для салата»">
+                </picture>
               </div>
               <h3 class="products__slider-item-header products__slider-item-header--salad">
                 Масло “Для салата”
@@ -313,7 +336,10 @@
             </li>
             <li class="products__slider-item products__slider-item--italian">
               <div class="products__slider-image-wrapper">
-                <img class="products__slider-image" src="img/photo-list/products-img-mobile-2.png" width="48" height="184" alt="Масло «Итальянское»"/>
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/photo-list/products-img-wide-desktop-2@2x.png 2x, img/photo-list/products-img-wide-desktop-2@1x.png 1x">
+                  <img class="products__slider-image" src="img/photo-list/products-img-mobile-2@1x.png" srcset="img/photo-list/products-img-mobile-2@2x.png 2x" alt="Масло «Итальянское»">
+                </picture>
               </div>
               <h3 class="products__slider-item-header products__slider-item-header--italian">
                 Масло “Итальянское”
@@ -356,7 +382,10 @@
             </li>
             <li class="products__slider-item products__slider-item--meat">
               <div class="products__slider-image-wrapper">
-                <img class="products__slider-image" src="img/photo-list/products-img-mobile-3.png" width="38" height="184" alt="Масло «Для мяса»"/>
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/photo-list/products-img-wide-desktop-3@2x.png 2x, img/photo-list/products-img-wide-desktop-3@1x.png 1x">
+                  <img class="products__slider-image" src="img/photo-list/products-img-mobile-3@1x.png" srcset="img/photo-list/products-img-mobile-3@2x.png 2x" alt="Масло «Для мяса»">
+                </picture>
               </div>
               <h3 class="products__slider-item-header products__slider-item-header--meat">
                 Масло “Для мяса”
@@ -399,7 +428,10 @@
             </li>
             <li class="products__slider-item products__slider-item--eastern">
               <div class="products__slider-image-wrapper">
-                <img class="products__slider-image" src="img/photo-list/products-img-mobile-4.png" width="41" height="184" alt="Восточное»"/>
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/photo-list/products-img-wide-desktop-4@2x.png 2x, img/photo-list/products-img-wide-desktop-4@1x.png 1x">
+                  <img class="products__slider-image" src="img/photo-list/products-img-mobile-4@1x.png" srcset="img/photo-list/products-img-mobile-4@2x.png 2x" alt="Масло «Восточное»">
+                </picture>
               </div>
               <h3 class="products__slider-item-header products__slider-item-header--eastern">
                 Масло “Восточное”
@@ -470,7 +502,12 @@
           О нас
         </h2>
         <div class="about-us__persons">
-          <img class="about-us__persons-image" src="img/photo-list/who-we-are-img-mobile.jpg" width="280" height="214" alt="Cоздатели масла. Таня и Рома"/>
+          <picture>
+            <source media="(min-width: 1920px)" srcset="img/photo-list/who-we-are-img-wide-desktop@2x.jpg 2x, img/photo-list/who-we-are-img-wide-desktop@1x.jpg 1x">
+            <source media="(min-width: 1366px)" srcset="img/photo-list/who-we-are-img-desktop@2x.jpg 2x, img/photo-list/who-we-are-img-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-list/who-we-are-img-tablet@2x.jpg 2x, img/photo-list/who-we-are-img-tablet@1x.jpg 1x">
+            <img class="about-us__persons-image" src="img/photo-list/who-we-are-img-mobile@1x.jpg" srcset="img/photo-list/who-we-are-img-mobile@2x.jpg 2x" alt="Cоздатели масла. Таня и Рома">
+          </picture>
           <div class="about-us__persons-inner">
             <h3 class="about-us__subject-header about-us__subject-header--persons">
               Кто мы
@@ -485,7 +522,12 @@
           </div>
         </div>
         <div class="about-us__work">
-          <img  class="about-us__work-image" src="img/photo-list/what-we-do-img-mobile.jpg" width="280" height="214" alt="Композиция бутылок масла и овощей"/>
+          <picture>
+            <source media="(min-width: 1920px)" srcset="img/photo-list/what-we-do-img-wide-desktop@2x.jpg 2x, img/photo-list/what-we-do-img-wide-desktop@1x.jpg 1x">
+            <source media="(min-width: 1366px)" srcset="img/photo-list/what-we-do-img-desktop@2x.jpg 2x, img/photo-list/what-we-do-img-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-list/what-we-do-img-tablet@2x.jpg 2x, img/photo-list/what-we-do-img-tablet@1x.jpg 1x">
+            <img class="about-us__work-image" src="img/photo-list/what-we-do-img-mobile@1x.jpg" srcset="img/photo-list/what-we-do-img-mobile@2x.jpg 2x" alt="Композиция бутылок масла и овощей">
+          </picture>
           <div class="about-us__work-inner">
             <h3 class="about-us__subject-header about-us__subject-header--work">
               Что мы делаем
@@ -510,7 +552,12 @@
                 Отзыв 1
               </h3>
               <a href="#">
-                <img class="reviews__image" src="img/photo-list/review-img-mobile-1.jpg" width="280" height="384" alt="Отзыв 1"/>
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/photo-list/review-img-wide-desktop-1@2x.jpg 2x, img/photo-list/review-img-wide-desktop-1@1x.jpg 1x">
+                  <source media="(min-width: 1366px)" srcset="img/photo-list/review-img-desktop-1@2x.jpg 2x, img/photo-list/review-img-desktop-1@1x.jpg 1x">
+                  <source media="(min-width: 768px)" srcset="img/photo-list/review-img-tablet-1@2x.jpg 2x, img/photo-list/review-img-tablet-1@1x.jpg 1x">
+                  <img class="reviews__image" src="img/photo-list/review-img-mobile-1@1x.jpg" srcset="img/photo-list/review-img-mobile-1@2x.jpg 2x" alt="Отзыв 1">
+                </picture>
               </a>
             </li>
             <li class="reviews__item">
@@ -518,7 +565,12 @@
                 Отзыв 2
               </h3>
               <a href="#">
-                <img class="reviews__image" src="img/photo-list/review-img-mobile-2.jpg" width="280" height="384" alt="Отзыв 2"/>
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/photo-list/review-img-wide-desktop-2@2x.jpg 2x, img/photo-list/review-img-wide-desktop-2@1x.jpg 1x">
+                  <source media="(min-width: 1366px)" srcset="img/photo-list/review-img-desktop-2@2x.jpg 2x, img/photo-list/review-img-desktop-2@1x.jpg 1x">
+                  <source media="(min-width: 768px)" srcset="img/photo-list/review-img-tablet-2@2x.jpg 2x, img/photo-list/review-img-tablet-2@1x.jpg 1x">
+                  <img class="reviews__image" src="img/photo-list/review-img-mobile-2@1x.jpg" srcset="img/photo-list/review-img-mobile-2@2x.jpg 2x" alt="Отзыв 2">
+                </picture>
               </a>
             </li>
             <li class="reviews__item">
@@ -526,7 +578,12 @@
                 Отзыв 3
               </h3>
               <a href="#">
-                <img class="reviews__image" src="img/photo-list/review-img-mobile-3.jpg" width="280" height="384" alt="Отзыв 3"/>
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/photo-list/review-img-wide-desktop-3@2x.jpg 2x, img/photo-list/review-img-wide-desktop-3@1x.jpg 1x">
+                  <source media="(min-width: 1366px)" srcset="img/photo-list/review-img-desktop-3@2x.jpg 2x, img/photo-list/review-img-desktop-3@1x.jpg 1x">
+                  <source media="(min-width: 768px)" srcset="img/photo-list/review-img-tablet-3@2x.jpg 2x, img/photo-list/review-img-tablet-3@1x.jpg 1x">
+                  <img class="reviews__image" src="img/photo-list/review-img-mobile-3@1x.jpg" srcset="img/photo-list/review-img-mobile-3@2x.jpg 2x" alt="Отзыв 3">
+                </picture>
               </a>
             </li>
           </ul>
@@ -611,7 +668,12 @@
         <h2 class="contacts__header">
           Контакты
         </h2>
-        <img class="contacts__image" src="img/photo-list/contacts-img-mobile.jpg" width="280" height="214" alt="Контакты"/>
+        <picture>
+          <source media="(min-width: 1920px)" srcset="img/photo-list/contacts-img-wide-desktop@2x.jpg 2x, img/photo-list/contacts-img-wide-desktop@1x.jpg 1x">
+          <source media="(min-width: 1366px)" srcset="img/photo-list/contacts-img-desktop@2x.jpg 2x, img/photo-list/contacts-img-desktop@1x.jpg 1x">
+          <source media="(min-width: 768px)" srcset="img/photo-list/contacts-img-tablet@2x.jpg 2x, img/photo-list/contacts-img-tablet@1x.jpg 1x">
+          <img class="contacts__image" src="img/photo-list/contacts-img-mobile@1x.jpg" srcset="img/photo-list/contacts-img-mobile@2x.jpg 2x" alt="Контакты">
+        </picture>
         <div class="contacts__inner">
           <ul class="contacts__list">
             <li class="contacts__item">

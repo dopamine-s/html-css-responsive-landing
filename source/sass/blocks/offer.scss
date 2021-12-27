@@ -364,23 +364,16 @@
 .offer__slider-image {
   display: block;
   margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 267px;
-    height: 442px;
-  }
+  max-width: 100%;
+  height: auto;
 
   @media (min-width: $desktop-width) {
     position: absolute;
     margin: -165px 0 0 -320px;
-    width: 287px;
-    height: 504px;
   }
 
   @media (min-width: $wide-desktop-width) {
     margin: -150px 0 0 -450px;
-    width: 387px;
-    height: 694px;
   }
 }
 

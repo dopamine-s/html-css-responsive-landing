@@ -28,14 +28,14 @@
 
 .reviews__list {
   display: grid;
-  grid-template-columns: 320px auto auto;
+  grid-template-columns: 320px 320px 320px;
   list-style: none;
   padding: 0;
   margin: 0;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 330px 330px auto;
+    grid-template-columns: 330px 330px 330px;
     column-gap: 30px;
     margin-bottom: 16px;
   }
@@ -52,14 +52,21 @@
 
 .reviews__image {
   display: block;
-  width: 100%;
+  width: 280px;
+  height: 384px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  filter: drop-shadow(10px 10px 35px $gray-250-transparent-1);
 
   @media (min-width: $tablet-width) {
-    object-fit: contain;
+    width: auto;
     height: 454px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     height: 461px;
   }
 
