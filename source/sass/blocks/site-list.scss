@@ -30,8 +30,11 @@
 }
 
 .site-list__item {
+  margin-bottom: 3px;
+
   @media (min-width: $desktop-width) {
     margin-right: 64px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $wide-desktop-width) {

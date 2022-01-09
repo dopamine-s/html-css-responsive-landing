@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   width: 320px;
 
   @media (min-width: $tablet-width) {
@@ -30,7 +30,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0 0 16px 0;
+  margin: 0 0 19px 0;
 
   &--salad {
     color: $salad-600;
@@ -134,7 +134,7 @@
   line-height: 24px;
   border: 1px solid;
   display: block;
-  padding: 8px 10px;
+  padding: 7px 10px;
   min-width: 143px;
   text-align: center;
   white-space: nowrap;
@@ -162,8 +162,8 @@
 
 .offer__nav-link--active {
   border: none;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .offer__nav-link--active.offer__nav-link--salad {
@@ -281,7 +281,8 @@
 
 .offer__slider-image-wrapper {
   position: relative;
-  margin-left: 40px;
+  margin-left: 90px;
+  margin-top: 13px;
 
   &::before,
   &::after {
@@ -295,8 +296,8 @@
     width: 240px;
     height: 240px;
     z-index: -1;
-    top: 40px;
-    left: -10px;
+    top: 46px;
+    left: -50px;
   }
 
   &::after {
@@ -304,8 +305,8 @@
     height: 280px;
     opacity: 0.2;
     z-index: -2;
-    top: 20px;
-    left: -30px;
+    top: 27px;
+    left: -70px;
   }
 
   @media (min-width: $tablet-width) {
@@ -382,7 +383,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0 0 8px 0;
+  margin: -4px 0 8px 0;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
@@ -428,6 +429,12 @@
 
   @media (min-width: $wide-desktop-width) {
     max-width: 600px;
+  }
+}
+
+.offer__slider-text-salad-span {
+  @media (max-width: $mobile-width) {
+    margin-left: -6px;
   }
 }
 
@@ -498,7 +505,7 @@
 .offer__slider-link-button {
   white-space: nowrap;
   font-size: 18px;
-  padding: 7px 20px 7px 20px;
+  padding: 7px 20px 7px 21px;
   min-width: 280px;
 
   @media (max-width: $tablet-width) {

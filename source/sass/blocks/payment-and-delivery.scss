@@ -43,9 +43,9 @@
   margin-bottom: 40px;
 
   &::before {
-    width: 78px;
-    height: 99px;
-    top: -50px;
+    width: 85px;
+    height: 129px;
+    top: -58px;
     right: 0;
     background-image: image-set(
       url("../img/photo-list/payment-and-delivery-picture-right-mobile@1x.png") 1x,
@@ -100,8 +100,8 @@
   &::before {
     width: 113px;
     height: 86px;
-    top: -30px;
-    left: -5px;
+    top: -28px;
+    left: 0;
     background-image: image-set(
       url("../img/photo-list/payment-and-delivery-picture-left-mobile@1x.png") 1x,
       url("../img/photo-list/payment-and-delivery-picture-left-mobile@2x.png") 2x
@@ -229,7 +229,7 @@
 
 .payment-and-delivery__link--new-post::before {
   top: 0;
-  left: 20px;
+  left: 19px;
   background-image: url("../img/photo-list/delivery-new-post-mobile-icon.svg");
 
   @media (min-width: $tablet-width) {
@@ -249,7 +249,7 @@
 
 .payment-and-delivery__link--pickup::before {
   top: 0;
-  left: 10px;
+  left: 17px;
   background-image: url("../img/photo-list/delivery-pickup-mobile-icon.svg");
 
   @media (min-width: $tablet-width) {
@@ -259,7 +259,7 @@
 
 .payment-and-delivery__link--pod::before {
   top: 0;
-  left: 15px;
+  left: 22px;
   background-image: url("../img/photo-list/payment-pod-mobile-icon.svg");
 
   @media (min-width: $tablet-width) {
@@ -269,7 +269,7 @@
 
 .payment-and-delivery__link--credit-card::before {
   top: 0;
-  left: 15px;
+  left: 11px;
   background-image: url("../img/photo-list/payment-credit-card-mobile-icon.svg");
 
   @media (min-width: $tablet-width) {
@@ -279,7 +279,7 @@
 
 .payment-and-delivery__link--cash::before {
   top: 0;
-  left: 35px;
+  left: 31px;
   background-image: url("../img/photo-list/payment-cash-mobile-icon.svg");
 
   @media (min-width: $tablet-width) {

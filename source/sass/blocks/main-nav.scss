@@ -21,6 +21,8 @@
 }
 
 .main-nav__list--footer {
+  margin-top: 6px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;

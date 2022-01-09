@@ -1,10 +1,5 @@
 .about-us {
   @include container;
-  margin-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
-  }
 }
 
 .about-us__header {
@@ -13,7 +8,7 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  margin: 0 0 16px 0;
+  margin: 0 0 23px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 48px;
@@ -34,10 +29,10 @@
     position: absolute;
     content: "";
     background-color: $salad-600-transparent-4;
-    height: 180px;
+    height: 190px;
     width: 100%;
     z-index: -2;
-    top: 80px;
+    top: 41px;
   }
 
   @media (min-width: $tablet-width) {
@@ -95,7 +90,7 @@
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  margin: 0 0 8px 0;
+  margin: 0 0 9px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
@@ -105,6 +100,10 @@
   }
 }
 
+.about-us__subject-header--work {
+  margin: -1px 0 9px -3px;
+}
+
 .about-us__persons-image,
 .about-us__work-image {
   position: relative;
@@ -112,7 +111,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   width: 280px;
   height: 214px;
   object-fit: cover;
@@ -228,4 +227,9 @@
     line-height: 24px;
     text-align: left;
   }
+}
+
+.about-us__text--work {
+  line-height: 24px;
+  margin-left: 3px;
 }

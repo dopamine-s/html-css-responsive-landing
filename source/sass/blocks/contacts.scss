@@ -7,10 +7,10 @@
     position: absolute;
     content: "";
     background-color: $salad-600-transparent-4;
-    height: 300px;
+    height: 280px;
     width: 100%;
     z-index: -1;
-    top: 80px;
+    top: 96px;
   }
 
   @media (min-width: $tablet-width) {
@@ -89,8 +89,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 11px 16px 16px 16px;
-  width: 300px;
+  padding: 15px 16px 16px 16px;
+  width: 298px;
   background-color: $white;
   margin-left: auto;
   margin-right: auto;
@@ -124,7 +124,7 @@
   list-style: none;
   width: 100%;
   padding: 0;
-  margin: 0 0 16px 0;
+  margin: 0 0 19px 0;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
@@ -138,7 +138,7 @@
 
 .contacts__item {
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 31px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 32px;
@@ -188,7 +188,7 @@
 }
 
 .contacts__link--phone::before {
-  top: 0;
+  top: -4px;
   left: 0;
   background-image: url("../img/photo-list/contacts-phone-mobile-icon.svg");
 
@@ -198,7 +198,7 @@
 }
 
 .contacts__link--facebook::before {
-  top: 0;
+  top: -4px;
   left: 0;
   background-image: url("../img/photo-list/contacts-facebook-mobile-icon.svg");
 
@@ -208,7 +208,7 @@
 }
 
 .contacts__link--instagram::before {
-  top: 0;
+  top: -4px;
   left: 0;
   background-image: url("../img/photo-list/contacts-instagram-mobile-icon.svg");
 
@@ -218,7 +218,7 @@
 }
 
 .contacts__link--telegram::before {
-  top: 0;
+  top: -4px;
   left: 0;
   background-image: url("../img/photo-list/contacts-telegram-mobile-icon.svg");
 
@@ -228,7 +228,7 @@
 }
 
 .contacts__link--viber::before {
-  top: 0;
+  top: -4px;
   left: 0;
   background-image: url("../img/photo-list/contacts-viber-mobile-icon.svg");
 
@@ -238,7 +238,9 @@
 }
 
 .contacts__button {
-  padding: 7px 20px 7px 20px;
+  line-height: 32px;
+  font-size: 16px;
+  padding: 3px 20px 3px 20px;
   width: 222px;
   color: $salad-600;
 }
