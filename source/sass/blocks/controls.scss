@@ -42,7 +42,7 @@
 
 .controls__control--offer-left,
 .controls__control--offer-right {
-  top: -500px;
+  top: -526px;
 
   @media (min-width: $desktop-width) {
     top: -260px;
@@ -50,7 +50,7 @@
 }
 
 .controls__control--offer-left {
-  left: 24px;
+  left: 28px;
 
   @media (min-width: $desktop-width) {
     left: 70px;
@@ -62,7 +62,7 @@
 }
 
 .controls__control--offer-right {
-  right: 24px;
+  right: 21px;
 
   @media (min-width: $desktop-width) {
     right: 70px;

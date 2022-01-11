@@ -19,13 +19,17 @@
   align-self: center;
   margin-top: 40px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+  }
 }
 
 .page-footer__main-nav {
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +44,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
+    margin-left: 32px;
   }
 
   @media (min-width: $desktop-width) {

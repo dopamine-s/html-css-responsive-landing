@@ -19,7 +19,7 @@
     &::before {
       height: 424px;
       width: 209px;
-      top: 150px;
+      top: 145px;
     }
   }
 
@@ -54,7 +54,7 @@
   @media (min-width: $tablet-width) {
     font-size: 48px;
     line-height: 61px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 }
 
@@ -97,9 +97,9 @@
   box-shadow: 10px 10px 35px $gray-250-transparent-1;
 
   @media (min-width: $tablet-width) {
-    padding: 40px;
+    padding: 46px 39px 40px 41px;
     width: 393px;
-    margin-top: -40px;
+    margin-top: -48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,7 +128,7 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -139,6 +139,10 @@
 .contacts__item {
   position: relative;
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 32px;
@@ -193,6 +197,7 @@
   background-image: url("../img/photo-list/contacts-phone-mobile-icon.svg");
 
   @media (min-width: $tablet-width) {
+    top: -6px;
     background-image: url("../img/photo-list/contacts-phone-icon.svg");
   }
 }
@@ -203,6 +208,7 @@
   background-image: url("../img/photo-list/contacts-facebook-mobile-icon.svg");
 
   @media (min-width: $tablet-width) {
+    top: -6px;
     background-image: url("../img/photo-list/contacts-facebook-icon.svg");
   }
 }
@@ -213,6 +219,7 @@
   background-image: url("../img/photo-list/contacts-instagram-mobile-icon.svg");
 
   @media (min-width: $tablet-width) {
+    top: -6px;
     background-image: url("../img/photo-list/contacts-instagram-icon.svg");
   }
 }
@@ -223,6 +230,7 @@
   background-image: url("../img/photo-list/contacts-telegram-mobile-icon.svg");
 
   @media (min-width: $tablet-width) {
+    top: -6px;
     background-image: url("../img/photo-list/contacts-telegram-icon.svg");
   }
 }
@@ -233,6 +241,7 @@
   background-image: url("../img/photo-list/contacts-viber-mobile-icon.svg");
 
   @media (min-width: $tablet-width) {
+    top: -6px;
     background-image: url("../img/photo-list/contacts-viber-icon.svg");
   }
 }
