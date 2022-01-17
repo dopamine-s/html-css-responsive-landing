@@ -1,5 +1,9 @@
 .page-footer {
   background-color: $salad-700;
+
+  @media (min-width: $desktop-width) {
+    min-height: 220px;
+  }
 }
 
 .page-footer__bottom-bar {
@@ -10,8 +14,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: min-content auto auto;
-    margin-bottom: 40px;
+    grid-template-columns: 140px 758px 168px;
   }
 }
 
@@ -22,6 +25,11 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 51px;
+    margin-left: 41px;
   }
 }
 
@@ -48,6 +56,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 33px;
     margin-bottom: 0;
+    margin-left: 0;
   }
 }

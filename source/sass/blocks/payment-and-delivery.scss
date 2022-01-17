@@ -78,8 +78,8 @@
     grid-template-columns: 759px auto;
 
     &::before {
-      top: 85px;
-      right: 86px;
+      top: 53px;
+      right: 63px;
     }
   }
 
@@ -131,8 +131,8 @@
     grid-template-columns: auto 759px;
 
     &::before {
-      top: -105px;
-      left: 86px;
+      top: -107px;
+      left: 118px;
     }
   }
 
@@ -271,6 +271,10 @@
     left: 30px;
     background-image: url("../img/photo-list/payment-pod-icon.svg");
   }
+
+  @media (min-width: $desktop-width) {
+    left: 57px;
+  }
 }
 
 .payment-and-delivery__link--credit-card::before {
@@ -281,6 +285,10 @@
   @media (min-width: $tablet-width) {
     left: 17px;
     background-image: url("../img/photo-list/payment-credit-card-icon.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 15px;
   }
 }
 

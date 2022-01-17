@@ -45,7 +45,7 @@
   top: -526px;
 
   @media (min-width: $desktop-width) {
-    top: -260px;
+    top: -283px;
   }
 }
 
@@ -53,7 +53,7 @@
   left: 28px;
 
   @media (min-width: $desktop-width) {
-    left: 70px;
+    left: 73px;
   }
 
   @media (min-width: $wide-desktop-width) {
@@ -65,7 +65,7 @@
   right: 21px;
 
   @media (min-width: $desktop-width) {
-    right: 70px;
+    right: 66px;
   }
 
   @media (min-width: $wide-desktop-width) {
@@ -78,6 +78,10 @@
 .controls__control--reviews-right {
   top: -320px;
 
+  @media (min-width: $desktop-width) {
+    top: -331px;
+  }
+
   @media (min-width: $wide-desktop-width) {
     top: -360px;
   }
@@ -86,6 +90,10 @@
 .controls__control--reviews-left {
   left: -56px;
 
+  @media (min-width: $desktop-width) {
+    left: -70px;
+  }
+
   @media (min-width: $wide-desktop-width) {
     left: 24px;
   }
@@ -93,6 +101,10 @@
 
 .controls__control--reviews-right {
   right: -56px;
+
+  @media (min-width: $desktop-width) {
+    right: -76px;
+  }
 
   @media (min-width: $wide-desktop-width) {
     right: 24px;

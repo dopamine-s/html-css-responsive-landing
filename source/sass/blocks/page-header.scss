@@ -38,8 +38,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 52px;
-    margin-top: 12px;
+    margin-left: 51px;
+    margin-top: 11px;
   }
 
   @media (min-width: $wide-desktop-width) {
@@ -236,6 +236,7 @@
 
   @media (min-width: $desktop-width) {
     order: 3;
+    margin-top: 56px;
   }
 }
 

@@ -7,8 +7,9 @@
 
 .main-nav__list--header {
   @media (min-width: $desktop-width) {
-    margin-left: 121px;
+    margin-left: 172px;
     margin-right: auto;
+    margin-top: 43px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -28,5 +29,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 22px;
+    margin-left: 33px;
   }
 }
