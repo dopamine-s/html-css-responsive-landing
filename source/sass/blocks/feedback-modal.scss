@@ -1,13 +1,87 @@
 .feedback-modal {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 51%;
   left: 50%;
   width: 280px;
+  min-height: 529px;
   padding: 24px;
   background-color: $white;
   box-shadow: 10px 10px 35px $gray-250-transparent-1;
   transform: translate(-50%, -50%);
+
+
+  &::after {
+    position: absolute;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    content: "";
+    z-index: 5;
+    width: 144px;
+    height: 98px;
+    top: 431px;
+    left: 1px;
+    cursor: auto;
+    background-image: image-set(
+      url("../img/photo-list/feedback-modal-img-mobile@1x.png") 1x,
+      url("../img/photo-list/feedback-modal-img-mobile@2x.png") 2x
+    );
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 55%;
+    width: 560px;
+    min-height: 552px;
+    padding: 56px;
+
+    &::after {
+      width: 156px;
+      height: 122px;
+      top: 403px;
+      left: 49px;
+      background-image: image-set(
+        url("../img/photo-list/feedback-modal-img-tablet@1x.png") 1x,
+        url("../img/photo-list/feedback-modal-img-tablet@2x.png") 2x
+      );
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 55%;
+    width: 630px;
+    padding: 56px;
+
+    &::after {
+      width: 168px;
+      height: 130px;
+      top: 413px;
+      left: 39px;
+      background-image: image-set(
+        url("../img/photo-list/feedback-modal-img-desktop@1x.png") 1x,
+        url("../img/photo-list/feedback-modal-img-desktop@2x.png") 2x
+      );
+    }
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    top: 55%;
+    left: 37.2%;
+    width: 598px;
+    padding: 56px;
+
+    &::after {
+      width: 180px;
+      height: 139px;
+      top: 404px;
+      left: 27px;
+      background-image: image-set(
+        url("../img/photo-list/feedback-modal-img-wide-desktop@1x.png") 1x,
+        url("../img/photo-list/feedback-modal-img-wide-desktop@2x.png") 2x
+      );
+    }
+  }
 }
 
 .feedback-modal__subject {
@@ -15,13 +89,97 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0;
+  margin: 0 0 17px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.feedback-modal__text-field:nth-of-type(1) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.feedback-modal__text-field:nth-of-type(1) input {
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    padding-left: 15px;
+  }
+}
+
+.feedback-modal__text-field:nth-of-type(2) {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+}
+
+.feedback-modal__text-field:nth-of-type(2) input {
+  @media (min-width: $wide-desktop-width) {
+    padding-left: 15px;
+  }
+}
+
+.feedback-modal__text-field:nth-of-type(3) {
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+}
+
+.feedback-modal__text-field:nth-of-type(3) textarea {
+  @media (min-width: $desktop-width) {
+    padding-top: 9px;
+  }
 }
 
 .feedback-modal__button {
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
-  padding: 7px 20px 7px 20px;
-  min-width: 232px;
+  padding: 7px 21px 7px 21px;
+  width: 232px;
   color: $salad-600;
   background-color: $white;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 210px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px 10px 7px 10px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 35px;
+      height: 47px;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      z-index: 20;
+
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 234px;
+    margin-left: 126px;
+    margin-right: auto;
+
+    &::after {
+      width: 35px;
+      height: 47px;
+      top: 0;
+      left: 0;
+    }
+  }
 }

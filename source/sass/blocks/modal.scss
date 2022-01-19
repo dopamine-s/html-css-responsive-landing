@@ -1,11 +1,19 @@
 .modal {
   display: none;
   position: fixed;
-  top: 75%;
-  left: 50%;
-  width: 280px;
-  padding: 39px 23px 49px;
+  right: -2.9%;
+  width: 598px;
+  height: 289px;
+  padding: 56px 56px 36px 56px;
   background-color: $white;
   box-shadow: 10px 10px 35px $gray-250-transparent-1;
   transform: translate(-50%, -50%);
+}
+
+.modal--fail {
+  top: 41.5%;
+}
+
+.modal--success {
+  top: 73.1%;
 }
