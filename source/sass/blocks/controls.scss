@@ -47,6 +47,10 @@
   @media (min-width: $desktop-width) {
     top: -283px;
   }
+
+  @media (min-width: $wide-desktop-width) {
+    top: -312px;
+  }
 }
 
 .controls__control--offer-left {
@@ -57,7 +61,7 @@
   }
 
   @media (min-width: $wide-desktop-width) {
-    left: 24px;
+    left: 35px;
   }
 }
 
@@ -69,7 +73,7 @@
   }
 
   @media (min-width: $wide-desktop-width) {
-    right: 24px;
+    right: 12px;
   }
 }
 
@@ -83,7 +87,7 @@
   }
 
   @media (min-width: $wide-desktop-width) {
-    top: -360px;
+    top: -398px;
   }
 }
 
@@ -95,7 +99,7 @@
   }
 
   @media (min-width: $wide-desktop-width) {
-    left: 24px;
+    left: 34px;
   }
 }
 
@@ -107,6 +111,6 @@
   }
 
   @media (min-width: $wide-desktop-width) {
-    right: 24px;
+    right: 12px;
   }
 }

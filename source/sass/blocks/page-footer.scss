@@ -16,6 +16,12 @@
     display: grid;
     grid-template-columns: 140px 758px 168px;
   }
+
+  @media (min-width: $wide-desktop-width) {
+    width: 1520px;
+    display: grid;
+    grid-template-columns: 140px 1168px auto;
+  }
 }
 
 .page-footer__logo {
@@ -30,6 +36,10 @@
   @media (min-width: $desktop-width) {
     margin-top: 51px;
     margin-left: 41px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-left: 59px;
   }
 }
 

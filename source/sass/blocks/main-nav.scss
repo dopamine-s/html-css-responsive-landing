@@ -16,7 +16,8 @@
   }
 
   @media (min-width: $wide-desktop-width) {
-    margin-left: 252px;
+    margin-top: 47px;
+    margin-left: 330px;
     margin-right: auto;
   }
 }
@@ -35,4 +36,12 @@
     margin-top: 22px;
     margin-left: 33px;
   }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-top: 24px;
+    margin-left: 89px;
+  }
 }
+
+
+

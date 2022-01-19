@@ -4,10 +4,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
   }
-
-  @media (min-width: $wide-desktop-width) {
-    overflow-x: hidden;
-  }
 }
 
 .payment-and-delivery__delivery,
@@ -84,14 +80,14 @@
   }
 
   @media (min-width: $wide-desktop-width) {
-    margin-bottom: 64px;
+    margin-bottom: 40px;
     grid-template-columns: 823px auto;
 
     &::before {
-      width: 149px;
-      height: 186px;
-      top: 40px;
-      right: 210px;
+      width: 179px;
+      height: 216px;
+      top: -14px;
+      right: 187px;
       background-image: image-set(
         url("../img/photo-list/payment-and-delivery-picture-right-wide-desktop@1x.png") 1x,
         url("../img/photo-list/payment-and-delivery-picture-right-wide-desktop@2x.png") 2x
@@ -191,6 +187,7 @@
   background-color: $salad-100;
   justify-content: center;
   width: 100%;
+  box-shadow: 10px 10px 35px $gray-250-transparent-1;
 }
 
 .payment-and-delivery__item {
