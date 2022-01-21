@@ -10,10 +10,64 @@
   transform: translate(-50%, -50%);
 }
 
+.modal--fail,
+.modal--success {
+  &::after {
+    position: absolute;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    content: "";
+    z-index: 5;
+    width: 209px;
+    height: 173px;
+    background-image: image-set(
+      url("../img/photo-list/modal-img-wide-desktop@1x.png") 1x,
+      url("../img/photo-list/modal-img-wide-desktop@2x.png") 2x
+    );
+  }
+}
+
 .modal--fail {
   top: 41.5%;
+
+  &::after {
+    top: 77px;
+    right: 0;
+  }
 }
 
 .modal--success {
   top: 73.1%;
+
+  &::after {
+    top: 108px;
+    right: 16px;
+  }
+}
+
+.modal__subject {
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 16px 0 10px 0;
+  color: $salad-500;
+}
+
+.modal__subject--fail {
+  margin-bottom: 23px;
+  color: $red-500;
+}
+
+.modal__text {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0 180px 0 2px;
+}
+
+.modal__text--fail {
+  padding: 0 145px 0 0;
 }
