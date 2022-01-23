@@ -188,7 +188,6 @@
 }
 
 .offer__slider-list {
-  @include container;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -200,8 +199,6 @@
 
 .offer__slider-item--active {
   display: block;
-
-  @include container;
 
   @media (min-width: $desktop-width) {
     display: flex;
