@@ -199,6 +199,12 @@
 
 .offer__slider-item--active {
   display: block;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 690px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
