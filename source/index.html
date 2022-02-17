@@ -94,7 +94,17 @@
         Масло «R. olio»
       </h1>
     </header>
-    <script src="js/app.js"></script>
+    <script>
+      var topBar = document.querySelector('.page-header__top-bar');
+      var pageHeaderToggle = document.querySelector('.page-header__toggle');
+
+      topBar.classList.remove('page-header__top-bar--no-js');
+
+      pageHeaderToggle.addEventListener('click', function() {
+        topBar.classList.toggle('page-header__top-bar--closed');
+        topBar.classList.toggle('page-header__top-bar--opened');
+      });
+    </script>
     <main class="page__main page-main">
       <section class="page-main__offer offer">
         <div class="offer__slider">
