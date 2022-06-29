@@ -1,4 +1,4 @@
-# Тестовое задание на верстку сайта
+# Тестовое задание на верстку сайта:
 
 Ссылка на макет:
 https://www.figma.com/file/LQUQLYVPK192rw3wQq4QzA/html-css-assessment-responsive-landing
